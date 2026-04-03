@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="bn" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══ SEO Meta ═══ -->
+  <title>নির্মাণধারা | সেরা আর্কিটেকচার, ইন্টেরিয়র ডিজাইন ও নির্মাণ কোম্পানি বাংলাদেশ</title>
+  <meta name="description" content="নির্মাণধারা — বাংলাদেশের শীর্ষস্থানীয় আর্কিটেকচার, ইন্টেরিয়র ডিজাইন, রিয়েল এস্টেট ও নির্মাণ প্রতিষ্ঠান। ডিজাইন থেকে বাস্তবায়ন পর্যন্ত সম্পূর্ণ সমাধান।" />
+  <meta name="keywords" content="আর্কিটেকচার বাংলাদেশ, ইন্টেরিয়র ডিজাইন ঢাকা, নির্মাণ কোম্পানি, রিয়েল এস্টেট, প্রপার্টি ডেভেলপার, নির্মাণধারা, interior design Bangladesh, architecture firm Dhaka, construction company Bangladesh" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Nirmandhara" />
+  <link rel="canonical" href="https://nirmandhara.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nirmandhara.com/" />
+  <meta property="og:title" content="নির্মাণধারা | আর্কিটেকচার, ইন্টেরিয়র ডিজাইন ও নির্মাণ — বাংলাদেশ" />
+  <meta property="og:description" content="বাংলাদেশের শীর্ষস্থানীয় ডিজাইন ও নির্মাণ প্রতিষ্ঠান। আপনার স্বপ্নের নকশা থেকে বাস্তব রূপ দেওয়া পর্যন্ত — সব কিছু আমরা।" />
+  <meta property="og:image" content="https://nirmandhara.com/images/og-home.jpg" />
+  <meta property="og:locale" content="bn_BD" />
+  <meta property="og:site_name" content="Nirmandhara" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="নির্মাণধারা — Design Your Dream" />
+  <meta name="twitter:description" content="আর্কিটেকচার, ইন্টেরিয়র ডিজাইন, নির্মাণ ও রিয়েল এস্টেট সেবা — বাংলাদেশ।" />
+  <meta name="twitter:image" content="https://nirmandhara.com/images/og-home.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="logo.ico" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "নির্মাণধারা (Nirmandhara)",
+    "alternateName": "Nirmandhara",
+    "description": "বাংলাদেশের শীর্ষস্থানীয় আর্কিটেকচার, ইন্টেরিয়র ডিজাইন, রিয়েল এস্টেট ও নির্মাণ প্রতিষ্ঠান।",
+    "url": "https://nirmandhara.com",
+    "logo": "https://nirmandhara.com/logo.png",
+    "image": "https://nirmandhara.com/images/og-home.jpg",
+    "telephone": "+8801620144641",
+    "address": { "@type": "PostalAddress", "addressCountry": "BD" },
+    "areaServed": "Bangladesh",
+    "sameAs": [],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  }
+  </script>
+
+  <style>
+    /* ══ HOME-SPECIFIC STYLES ══ */
+
+    /* Hero */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 120px 0 80px;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: var(--ink);
+      z-index: 0;
+    }
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 55% 65% at 70% 50%, var(--gold-bg2) 0%, transparent 65%),
+        radial-gradient(ellipse 40% 50% at 10% 80%, rgba(184,144,46,0.04) 0%, transparent 60%);
+    }
+    /* Decorative arch SVG background */
+    .hero-arch {
+      position: absolute;
+      right: -5%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 55%;
+      max-width: 700px;
+      opacity: 0.045;
+      pointer-events: none;
+    }
+    .hero-grid-line {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(184,144,46,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(184,144,46,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      z-index: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 680px;
+    }
+    .hero-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 24px;
+      animation: fadeInUp 0.7s ease both;
+    }
+    .hero-eyebrow-line { width: 40px; height: 1px; background: var(--gold); }
+    .hero-eyebrow span {
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 6vw, 5rem);
+      font-weight: 700;
+      line-height: 1.12;
+      color: var(--cream);
+      margin-bottom: 24px;
+      animation: fadeInUp 0.7s 0.15s ease both;
+    }
+    .hero-title .line-gold { color: var(--gold); }
+    .hero-title .line-italic { font-style: italic; }
+    .hero-desc {
+      font-size: 1.05rem;
+      color: rgba(250,248,243,0.65);
+      line-height: 1.85;
+      margin-bottom: 38px;
+      max-width: 520px;
+      animation: fadeInUp 0.7s 0.3s ease both;
+    }
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      animation: fadeInUp 0.7s 0.45s ease both;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 56px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      animation: fadeInUp 0.7s 0.6s ease both;
+      flex-wrap: wrap;
+    }
+    .hero-stat-num {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .hero-stat-label {
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-top: 6px;
+    }
+    /* Hero image mosaic */
+    .hero-visual {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 42%;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .hero-visual::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 180px;
+      background: linear-gradient(90deg, var(--dark) 0%, transparent 100%);
+      z-index: 2;
+    }
+    .hero-img-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      height: 100%;
+      gap: 3px;
+    }
+    .hero-img-slot {
+      background: rgba(30,26,22,0.6);
+      border: 1px dashed rgba(184,144,46,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 8px;
+      color: rgba(232,160,32,0.3);
+      font-family: var(--font-ui);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      overflow: hidden;
+    }
+    .hero-img-slot.span2 { grid-column: span 2; }
+    .hero-img-slot svg { width: 28px; height: 28px; opacity: 0.35; }
+    .hero-img-slot img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* ── Scroll indicator ── */
+    .scroll-hint {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      animation: fadeIn 1s 1.2s ease both;
+    }
+    .scroll-hint span {
+      font-family: var(--font-ui);
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--faint);
+    }
+    .scroll-mouse {
+      width: 22px; height: 36px;
+      border: 1px solid rgba(232,160,32,0.3);
+      border-radius: 12px;
+      position: relative;
+    }
+    .scroll-mouse::after {
+      content: '';
+      position: absolute;
+      top: 6px; left: 50%;
+      transform: translateX(-50%);
+      width: 3px; height: 6px;
+      background: var(--gold);
+      border-radius: 3px;
+      animation: scroll-dot 1.8s ease infinite;
+    }
+    @keyframes scroll-dot {
+      0%   { top: 6px; opacity: 1; }
+      80%  { top: 20px; opacity: 0; }
+      100% { top: 6px; opacity: 0; }
+    }
+
+    /* ── Why Us ── */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border-2);
+      border: 1px solid var(--border-2);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .why-item {
+      background: var(--white);
+      padding: 36px 28px;
+      transition: var(--transition);
+      position: relative;
+    }
+    .why-item::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 28px; right: 28px;
+      height: 2px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transition: var(--transition);
+      transform-origin: left;
+    }
+    .why-item:hover { background: var(--cream-2); }
+    .why-item:hover::after { transform: scaleX(1); }
+    .why-icon {
+      width: 52px; height: 52px;
+      background: var(--gold-bg);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      transition: var(--transition);
+    }
+    .why-item:hover .why-icon { background: var(--gold-border); border-color: rgba(184,144,46,0.35); }
+    .why-icon svg { width: 24px; height: 24px; stroke: var(--gold); }
+    .why-item h3 { font-size: 1rem; margin-bottom: 10px; }
+    .why-item p { font-size: 0.84rem; color: var(--faint); line-height: 1.7; }
+
+    /* ── Services Preview ── */
+    .services-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      margin-bottom: 64px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      transition: var(--transition);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      transform: scaleX(0);
+      transition: var(--transition);
+    }
+    .service-card:hover { border-color: rgba(184,144,46,0.2); transform: translateY(-5px); box-shadow: var(--shadow-card); }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-icon {
+      font-size: 2rem;
+      margin-bottom: 18px;
+      display: block;
+    }
+    .service-card h3 {
+      font-family: var(--font-bangla);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--cream);
+      margin-bottom: 10px;
+    }
+    .service-card p { font-size: 0.83rem; color: var(--faint); line-height: 1.7; }
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 18px;
+      transition: var(--transition);
+    }
+    .service-link svg { width: 14px; height: 14px; stroke: var(--gold); transition: var(--transition); }
+    .service-link:hover { gap: 10px; }
+
+    /* ── Projects ── */
+    #projects { background: var(--ink); }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 300px 300px;
+      gap: 16px;
+    }
+    .project-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-lg);
+      cursor: pointer;
+      border: 1px dashed rgba(184,144,46,0.12);
+    }
+    .project-item.big { grid-row: span 2; }
+    .project-img-placeholder {
+      width: 100%; height: 100%;
+      background: var(--cream-2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: rgba(232,160,32,0.3);
+      font-family: var(--font-ui);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      transition: var(--transition);
+    }
+    .project-item:hover .project-img-placeholder { background: var(--cream-3); }
+    .project-img-placeholder svg { width: 32px; height: 32px; opacity: 0.4; }
+    .project-overlay {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 24px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.85) 0%, transparent 100%);
+      transform: translateY(10px);
+      opacity: 0;
+      transition: var(--transition);
+    }
+    .project-item:hover .project-overlay { opacity: 1; transform: translateY(0); }
+    .project-overlay h4 { font-size: 1rem; color: var(--cream); margin-bottom: 4px; }
+    .project-overlay span {
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ── Process ── */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      position: relative;
+    }
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 32px;
+      left: 10%;
+      right: 10%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-hover), var(--gold), var(--gold-hover), transparent);
+      z-index: 0;
+    }
+    .process-step {
+      text-align: center;
+      padding: 0 16px;
+      position: relative;
+      z-index: 1;
+    }
+    .process-num {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 2px solid var(--gold-hover);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      color: var(--gold);
+      font-weight: 700;
+      transition: var(--transition);
+    }
+    .process-step:hover .process-num {
+      background: var(--gold);
+      color: var(--ink);
+      border-color: var(--gold);
+      box-shadow: 0 0 24px rgba(184,144,46,0.4);
+    }
+    .process-step h4 {
+      font-family: var(--font-bangla);
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .process-step p { font-size: 0.8rem; color: var(--faint); line-height: 1.6; }
+
+    /* ── CTA Band ── */
+    .cta-band {
+      background: linear-gradient(135deg, var(--dark-2) 0%, #1a1500 50%, var(--dark-2) 100%);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-lg);
+      padding: 64px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-band::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px; height: 300px;
+      background: radial-gradient(ellipse, var(--gold-bg2) 0%, transparent 70%);
+    }
+    .cta-band h2 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      margin-bottom: 16px;
+      position: relative;
+    }
+    .cta-band p {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 500px;
+      margin: 0 auto 36px;
+      position: relative;
+    }
+    .cta-buttons {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    /* ── Testimonial ── */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .testimonial-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      position: relative;
+      transition: var(--transition);
+    }
+    .testimonial-card:hover { border-color: rgba(184,144,46,0.2); }
+    .quote-icon {
+      font-family: var(--font-display);
+      font-size: 4rem;
+      line-height: 1;
+      color: var(--gold-hover);
+      opacity: 0.4;
+      position: absolute;
+      top: 16px;
+      right: 24px;
+    }
+    .testimonial-text {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .testimonial-avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--cream-2);
+      border: 2px solid var(--gold-hover);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: var(--gold);
+    }
+    .testimonial-name { font-weight: 600; font-size: 0.9rem; color: var(--ink); }
+    .testimonial-role { font-family: var(--font-ui); font-size: 0.72rem; letter-spacing: 0.08em; color: var(--faint); text-transform: uppercase; }
+    .star-row { color: var(--gold); font-size: 0.8rem; letter-spacing: 2px; margin-bottom: 14px; }
+
+    /* ─── RESPONSIVE (Home) ─── */
+    @media (max-width: 1024px) {
+      .hero-visual { display: none; }
+      .why-grid { grid-template-columns: 1fr 1fr; }
+      .services-intro { grid-template-columns: 1fr; gap: 40px; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .projects-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 250px 250px 250px; }
+      .project-item.big { grid-row: span 1; }
+      .process-steps { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .process-steps::before { display: none; }
+      .testimonials-grid { grid-template-columns: 1fr 1fr; }
+      .cta-band { padding: 48px 32px; }
+    }
+    @media (max-width: 768px) {
+      .why-grid { grid-template-columns: 1fr 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
+      .projects-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+      .project-item { height: 220px; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .hero-stats { gap: 28px; }
+      .process-steps { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .why-grid { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════ NAVBAR ══════════════ -->
+<nav id="navbar" aria-label="প্রধান নেভিগেশন">
+  <div class="container">
+    <div class="nav-inner">
+
+      <!-- Toggle (mobile) -->
+      <button class="nav-toggle" aria-label="মেনু" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Links LEFT -->
+      <div class="nav-links" role="menubar">
+        <a href="index.html" role="menuitem">হোম</a>
+        <a href="services.html" role="menuitem">সেবাসমূহ</a>
+        <a href="about.html" role="menuitem">আমাদের সম্পর্কে</a>
+        <a href="contact.html" role="menuitem">যোগাযোগ</a>
+        <a href="terms.html" role="menuitem">শর্তাবলী</a>
+      </div>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/8801620144641" target="_blank" rel="noopener" class="nav-wa" aria-label="হোয়াটসঅ্যাপে যোগাযোগ">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        হোয়াটসঅ্যাপ
+      </a>
+
+      <!-- Logo RIGHT -->
+      <a href="index.html" class="nav-logo" aria-label="নির্মাণধারা হোম">
+        <img src="logo.png" alt="নির্মাণধারা লোগো" class="nav-logo-img"
+             onerror="this.src='logo.jpg';this.onerror=()=>{this.style.background='var(--dark-3)';this.alt='ND';}" />
+      </a>
+
+    </div>
+
+    <!-- Mobile nav -->
+    <nav class="nav-mobile" aria-label="মোবাইল মেনু">
+      <a href="index.html">🏠 হোম</a>
+      <a href="services.html">✦ সেবাসমূহ</a>
+      <a href="about.html">ℹ️ আমাদের সম্পর্কে</a>
+      <a href="contact.html">📞 যোগাযোগ</a>
+      <a href="terms.html">📄 শর্তাবলী</a>
+      <a href="https://wa.me/8801620144641" target="_blank" rel="noopener" class="nav-mobile-wa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        হোয়াটসঅ্যাপে বার্তা পাঠান
+      </a>
+    </nav>
+  </div>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section id="hero" aria-label="হিরো সেকশন">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-line"></div>
+
+  <!-- Decorative arch -->
+  <svg class="hero-arch" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M50 500V200C50 100 350 100 350 200V500" stroke="#b8902e" stroke-width="8" fill="none"/>
+    <path d="M90 500V220C90 130 310 130 310 220V500" stroke="#b8902e" stroke-width="4" fill="none"/>
+    <circle cx="200" cy="195" r="10" fill="#b8902e"/>
+  </svg>
+
+  <!-- Hero visual (right) -->
+  <div class="hero-visual" aria-hidden="true">
+    <div class="hero-img-grid">
+      <div class="hero-img-slot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        <span>ছবি যোগ করুন</span>
+      </div>
+      <div class="hero-img-slot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        <span>ছবি যোগ করুন</span>
+      </div>
+      <div class="hero-img-slot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        <span>ছবি যোগ করুন</span>
+      </div>
+      <div class="hero-img-slot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        <span>ছবি যোগ করুন</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        <span>বাংলাদেশের শীর্ষস্থানীয় ডিজাইন ফার্ম</span>
+      </div>
+
+      <h1 class="hero-title">
+        আপনার স্বপ্নকে<br/>
+        <span class="line-gold line-italic">বাস্তবে রূপ দিন</span>
+      </h1>
+
+      <p class="hero-desc">
+        নির্মাণধারা — আর্কিটেকচার, ইন্টেরিয়র ডিজাইন, রিয়েল এস্টেট ও নির্মাণে বাংলাদেশের
+        সবচেয়ে বিশ্বস্ত নাম। ডিজাইন থেকে শুরু করে সম্পূর্ণ বাস্তবায়ন পর্যন্ত আমরা আপনার পাশে।
+      </p>
+
+      <div class="hero-cta">
+        <button class="btn btn-gold" onclick="openWhatsApp('নমস্কার, আমি নির্মাণধারার সেবা সম্পর্কে জানতে চাই।')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          বিনামূল্যে পরামর্শ নিন
+        </button>
+        <a href="services.html" class="btn btn-outline">আমাদের সেবাসমূহ →</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num shimmer-text">৫০০+</div>
+          <div class="hero-stat-label">সম্পন্ন প্রজেক্ট</div>
+        </div>
+        <div>
+          <div class="hero-stat-num shimmer-text">১০+</div>
+          <div class="hero-stat-label">বছরের অভিজ্ঞতা</div>
+        </div>
+        <div>
+          <div class="hero-stat-num shimmer-text">৩০০+</div>
+          <div class="hero-stat-label">সন্তুষ্ট গ্রাহক</div>
+        </div>
+        <div>
+          <div class="hero-stat-num shimmer-text">৬৪</div>
+          <div class="hero-stat-label">জেলায় কাজ করি</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span>নিচে স্ক্রোল করুন</span>
+    <div class="scroll-mouse"></div>
+  </div>
+</section>
+
+<!-- ══════════════ WHY NIRMANDHARA ══════════════ -->
+<section class="section-sm" aria-labelledby="why-heading">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-item" data-animate>
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>সরকার অনুমোদিত</h3>
+        <p>লাইসেন্সপ্রাপ্ত ও নিবন্ধিত প্রতিষ্ঠান। সকল কাজ বৈধভাবে পরিচালিত।</p>
+      </div>
+      <div class="why-item" data-animate>
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>সময়মতো ডেলিভারি</h3>
+        <p>প্রতিটি প্রজেক্ট নির্ধারিত সময়ের মধ্যে সম্পন্ন করার প্রতিশ্রুতি।</p>
+      </div>
+      <div class="why-item" data-animate>
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3>গুণগত মান নিশ্চিত</h3>
+        <p>উন্নত মানের উপকরণ ও অভিজ্ঞ প্রকৌশলী দিয়ে সর্বোচ্চ মান বজায় রাখা।</p>
+      </div>
+      <div class="why-item" data-animate>
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>বিশেষজ্ঞ দল</h3>
+        <p>অভিজ্ঞ আর্কিটেক্ট, ইঞ্জিনিয়ার ও ডিজাইনারদের সমন্বিত দক্ষ টিম।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ SERVICES PREVIEW ══════════════ -->
+<section class="section" id="services-preview" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="services-intro">
+      <div>
+        <span class="section-label">আমাদের সেবা</span>
+        <h2 class="section-title" id="services-heading">
+          ডিজাইন থেকে <em>বাস্তবায়ন</em><br/>পর্যন্ত সম্পূর্ণ সমাধান
+        </h2>
+        <div class="gold-line"><span></span></div>
+        <p style="color: var(--muted); font-size: 0.95rem; line-height: 1.85; max-width: 420px;">
+          আর্কিটেকচার নকশা থেকে শুরু করে সম্পূর্ণ নির্মাণ, ইন্টেরিয়র ডিজাইন এবং রিয়েল এস্টেট পরামর্শ — সব কিছু এক ছাদের নিচে।
+        </p>
+        <br/>
+        <a href="services.html" class="btn btn-gold" style="margin-top: 8px;">সব সেবা দেখুন →</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="background:var(--dark-2); border:1px solid rgba(184,144,46,0.12); border-radius: var(--radius-lg); padding: 24px; display:flex; align-items:center; gap:18px;">
+          <div style="width:48px;height:48px;border-radius:50%;background:rgba(184,144,46,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902e" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div>
+            <div style="font-weight:600; font-size:0.9rem;">রেসিডেন্সিয়াল প্রজেক্ট</div>
+            <div style="font-size:0.8rem; color:var(--faint);">বাড়ি, ফ্ল্যাট, ভিলা ডিজাইন ও নির্মাণ</div>
+          </div>
+        </div>
+        <div style="background:var(--dark-2); border:1px solid rgba(184,144,46,0.12); border-radius: var(--radius-lg); padding: 24px; display:flex; align-items:center; gap:18px;">
+          <div style="width:48px;height:48px;border-radius:50%;background:rgba(184,144,46,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902e" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          </div>
+          <div>
+            <div style="font-weight:600; font-size:0.9rem;">কমার্শিয়াল প্রজেক্ট</div>
+            <div style="font-size:0.8rem; color:var(--faint);">অফিস, শোরুম, হোটেল, রেস্টুরেন্ট</div>
+          </div>
+        </div>
+        <div style="background: linear-gradient(135deg, rgba(184,144,46,0.1), var(--gold-bg2)); border:1px solid rgba(184,144,46,0.25); border-radius: var(--radius-lg); padding: 24px; display:flex; align-items:center; gap:18px;">
+          <div style="width:48px;height:48px;border-radius:50%;background:var(--gold-border);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902e" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div>
+            <div style="font-weight:700; font-size:0.9rem; color:var(--gold);">প্ল্যাটিনাম প্যাকেজ ✦</div>
+            <div style="font-size:0.8rem; color:var(--faint);">সর্বোচ্চ বিলাসবহুল সেবা — কাস্টম মূল্য</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" data-animate>
+        <span class="service-icon">🏛️</span>
+        <h3>আর্কিটেকচারাল ডিজাইন</h3>
+        <p>বিল্ডিং ডিজাইন, বাস্তু পরিকল্পনা, স্ট্রাকচারাল ড্রয়িং ও অনুমোদনপ্রাপ্ত নকশা প্রস্তুত।</p>
+        <a href="services.html" class="service-link">বিস্তারিত <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="service-card" data-animate>
+        <span class="service-icon">🛋️</span>
+        <h3>ইন্টেরিয়র ডিজাইন</h3>
+        <p>আধুনিক ও বিলাসবহুল ইন্টেরিয়র ডিজাইন — থিমভিত্তিক সাজসজ্জা এবং ফার্নিচার পরিকল্পনা।</p>
+        <a href="services.html" class="service-link">বিস্তারিত <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="service-card" data-animate>
+        <span class="service-icon">🏗️</span>
+        <h3>নির্মাণ কাজ</h3>
+        <p>সম্পূর্ণ নির্মাণ পরিষেবা — ফাউন্ডেশন থেকে ছাদ পর্যন্ত সকল নির্মাণ কাজ।</p>
+        <a href="services.html" class="service-link">বিস্তারিত <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="service-card" data-animate>
+        <span class="service-icon">🏢</span>
+        <h3>রিয়েল এস্টেট</h3>
+        <p>জমি ক্রয়-বিক্রয়, ফ্ল্যাট ডেভেলপমেন্ট এবং প্রপার্টি ম্যানেজমেন্ট পরামর্শ।</p>
+        <a href="services.html" class="service-link">বিস্তারিত <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="service-card" data-animate>
+        <span class="service-icon">📦</span>
+        <h3>আমদানি ও পাইকারি</h3>
+        <p>নির্মাণ সামগ্রী, ফার্নিচার ও ইন্টেরিয়র উপকরণ আমদানি ও পাইকারি সরবরাহ।</p>
+        <a href="services.html" class="service-link">বিস্তারিত <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="service-card" data-animate style="border-color: rgba(184,144,46,0.2); background: linear-gradient(135deg, var(--dark-2), #1a1400);">
+        <span class="service-icon">✦</span>
+        <h3 style="color:var(--gold);">প্ল্যাটিনাম সেবা</h3>
+        <p>আমাদের সর্বোচ্চ সেবা প্যাকেজ — সম্পূর্ণ কাস্টমাইজড, বিলাসবহুল সমাধান।</p>
+        <a href="services.html" class="service-link" style="color:var(--gold);">বিস্তারিত <svg viewBox="0 0 24 24" fill="none" stroke="#b8902e" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PROJECTS ══════════════ -->
+<section class="section" id="projects" aria-labelledby="projects-heading">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:52px;">
+      <span class="section-label">আমাদের কাজ</span>
+      <h2 class="section-title" id="projects-heading">নির্বাচিত <em>প্রজেক্টসমূহ</em></h2>
+      <div class="gold-line" style="max-width:200px; margin-inline:auto;"><span></span></div>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-item big" data-animate>
+        <div class="project-img-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>প্রধান প্রজেক্ট ছবি</span>
+        </div>
+        <div class="project-overlay">
+          <h4>লাক্সারি রেসিডেন্স — ঢাকা</h4>
+          <span>আর্কিটেকচার + ইন্টেরিয়র</span>
+        </div>
+      </div>
+      <div class="project-item" data-animate>
+        <div class="project-img-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>প্রজেক্ট ছবি</span>
+        </div>
+        <div class="project-overlay">
+          <h4>কর্পোরেট অফিস</h4>
+          <span>ইন্টেরিয়র ডিজাইন</span>
+        </div>
+      </div>
+      <div class="project-item" data-animate>
+        <div class="project-img-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>প্রজেক্ট ছবি</span>
+        </div>
+        <div class="project-overlay">
+          <h4>বাণিজ্যিক কমপ্লেক্স</h4>
+          <span>আর্কিটেকচার</span>
+        </div>
+      </div>
+      <div class="project-item" data-animate>
+        <div class="project-img-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>প্রজেক্ট ছবি</span>
+        </div>
+        <div class="project-overlay">
+          <h4>হোটেল ইন্টেরিয়র</h4>
+          <span>ইন্টেরিয়র + ফার্নিচার</span>
+        </div>
+      </div>
+      <div class="project-item" data-animate>
+        <div class="project-img-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>প্রজেক্ট ছবি</span>
+        </div>
+        <div class="project-overlay">
+          <h4>রেস্টুরেন্ট ডিজাইন</h4>
+          <span>কনসেপ্ট + এক্সিকিউশন</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <button class="btn btn-outline" onclick="openWhatsApp('আমি নির্মাণধারার পোর্টফোলিও দেখতে চাই।')">সব প্রজেক্ট দেখুন →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PROCESS ══════════════ -->
+<section class="section" style="background:var(--dark-2);" aria-labelledby="process-heading">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:56px;">
+      <span class="section-label">কিভাবে কাজ করি</span>
+      <h2 class="section-title" id="process-heading">আমাদের <em>কার্যপ্রক্রিয়া</em></h2>
+      <div class="gold-line" style="max-width:200px; margin-inline:auto;"><span></span></div>
+    </div>
+    <div class="process-steps">
+      <div class="process-step" data-animate>
+        <div class="process-num">১</div>
+        <h4>পরামর্শ</h4>
+        <p>প্রাথমিক আলোচনা ও আপনার চাহিদা বোঝা</p>
+      </div>
+      <div class="process-step" data-animate>
+        <div class="process-num">২</div>
+        <h4>পরিকল্পনা</h4>
+        <p>ডিজাইন কনসেপ্ট ও বাজেট প্রস্তুত</p>
+      </div>
+      <div class="process-step" data-animate>
+        <div class="process-num">৩</div>
+        <h4>ডিজাইন</h4>
+        <p>বিস্তারিত নকশা ও ভিজ্যুয়ালাইজেশন</p>
+      </div>
+      <div class="process-step" data-animate>
+        <div class="process-num">৪</div>
+        <h4>বাস্তবায়ন</h4>
+        <p>নির্মাণ ও ইনস্টলেশন কাজ শুরু</p>
+      </div>
+      <div class="process-step" data-animate>
+        <div class="process-num">৫</div>
+        <h4>হস্তান্তর</h4>
+        <p>মান পরীক্ষা ও আপনার হাতে হস্তান্তর</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ TESTIMONIALS ══════════════ -->
+<section class="section" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:52px;">
+      <span class="section-label">গ্রাহকদের মতামত</span>
+      <h2 class="section-title" id="testimonials-heading">তারা কী <em>বলেন</em></h2>
+      <div class="gold-line" style="max-width:200px; margin-inline:auto;"><span></span></div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card" data-animate>
+        <div class="quote-icon">"</div>
+        <div class="star-row">★★★★★</div>
+        <p class="testimonial-text">নির্মাণধারার কাজে আমি সত্যিই মুগ্ধ। আমার বাড়ির ইন্টেরিয়র ডিজাইন অসাধারণ হয়েছে। সময়মতো এবং বাজেটের মধ্যে কাজ শেষ করেছে।</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">র</div>
+          <div>
+            <div class="testimonial-name">রাহেলা বেগম</div>
+            <div class="testimonial-role">ঢাকা, গুলশান</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card" data-animate>
+        <div class="quote-icon">"</div>
+        <div class="star-row">★★★★★</div>
+        <p class="testimonial-text">অফিস রিনোভেশনের জন্য নির্মাণধারাকে বেছে নিয়েছিলাম। তাদের প্রফেশনালিজম ও মানের কাজ দেখে আমি অভিভূত। পুরো টিম অত্যন্ত দক্ষ।</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">ক</div>
+          <div>
+            <div class="testimonial-name">করিম সাহেব</div>
+            <div class="testimonial-role">ব্যবসায়ী, চট্টগ্রাম</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card" data-animate>
+        <div class="quote-icon">"</div>
+        <div class="star-row">★★★★★</div>
+        <p class="testimonial-text">প্ল্যাটিনাম প্যাকেজে আমার বাড়ি সম্পূর্ণ নতুনভাবে তৈরি করিয়েছি। সত্যিই বিলাসবহুল অনুভূতি। নির্মাণধারা সেরা পছন্দ।</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">ম</div>
+          <div>
+            <div class="testimonial-name">মাহমুদ হোসেন</div>
+            <div class="testimonial-role">রিয়েল এস্টেট উদ্যোক্তা</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CTA BAND ══════════════ -->
+<section class="section-sm" aria-labelledby="cta-heading">
+  <div class="container">
+    <div class="cta-band">
+      <span class="section-label" style="justify-content:center; display:block; text-align:center;">আজই শুরু করুন</span>
+      <h2 id="cta-heading">আপনার স্বপ্নের প্রজেক্ট <em style="color:var(--gold);">শুরু করুন</em></h2>
+      <p>বিনামূল্যে পরামর্শের জন্য আজই আমাদের সাথে যোগাযোগ করুন। আমাদের বিশেষজ্ঞ দল আপনার সেবায় প্রস্তুত।</p>
+      <div class="cta-buttons">
+        <button class="btn btn-gold" onclick="openWhatsApp('আস্সালামু আলাইকুম! আমি নির্মাণধারার সাথে আমার প্রজেক্ট নিয়ে আলোচনা করতে চাই।')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          হোয়াটসঅ্যাপে যোগাযোগ
+        </button>
+        <a href="contact.html" class="btn btn-outline">যোগাযোগ ফর্ম →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer aria-label="ফুটার">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="logo.png" alt="নির্মাণধারা" class="footer-logo-img"
+               onerror="this.src='logo.jpg';" />
+          <div>
+            <div class="footer-brand-name"><span>নির্মাণ</span>ধারা</div>
+            <div class="footer-tagline">Design Your Dream</div>
+          </div>
+        </div>
+        <p class="footer-desc">বাংলাদেশের শীর্ষস্থানীয় আর্কিটেকচার, ইন্টেরিয়র ডিজাইন ও নির্মাণ প্রতিষ্ঠান। আপনার স্বপ্নের বাড়ি বা অফিস গড়তে আমরা প্রস্তুত।</p>
+        <div class="footer-lic">সরকার অনুমোদিত | লাইসেন্স নং: <span>XXXXX</span></div>
+      </div>
+
+      <div class="footer-col">
+        <h4>দ্রুত লিংক</h4>
+        <ul>
+          <li><a href="index.html">হোম</a></li>
+          <li><a href="services.html">সেবাসমূহ</a></li>
+          <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+          <li><a href="contact.html">যোগাযোগ</a></li>
+          <li><a href="terms.html">শর্তাবলী</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>আমাদের সেবা</h4>
+        <ul>
+          <li><a href="services.html">আর্কিটেকচারাল ডিজাইন</a></li>
+          <li><a href="services.html">ইন্টেরিয়র ডিজাইন</a></li>
+          <li><a href="services.html">নির্মাণ কাজ</a></li>
+          <li><a href="services.html">রিয়েল এস্টেট</a></li>
+          <li><a href="services.html">প্ল্যাটিনাম প্যাকেজ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>যোগাযোগ</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.41 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91A16 16 0 0 0 14 15.91l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+৮৮০ ১৬২০-১৪৪৬৪১</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>বাংলাদেশ</span>
+        </div>
+        <br/>
+        <button class="btn btn-gold" style="width:100%; justify-content:center;" onclick="openWhatsApp()">
+          হোয়াটসঅ্যাপ করুন
+        </button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© ২০২৪ <span>নির্মাণধারা</span>। সকল স্বত্ব সংরক্ষিত। | নিবন্ধন নং: <span>XXXXX</span></p>
+      <div class="footer-social">
+        <a href="#" aria-label="ফেসবুক">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" aria-label="ইনস্টাগ্রাম">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://wa.me/8801620144641" target="_blank" rel="noopener" aria-label="হোয়াটসঅ্যাপ">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════ WA FLOAT ══════════════ -->
+<a href="#" id="wa-float" class="wa-float" aria-label="হোয়াটসঅ্যাপে বার্তা পাঠান" title="হোয়াটসঅ্যাপে যোগাযোগ করুন">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+

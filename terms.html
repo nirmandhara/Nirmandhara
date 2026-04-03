@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="bn" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>শর্তাবলী ও নীতিমালা | নির্মাণধারা — আর্কিটেকচার ও নির্মাণ সেবা বাংলাদেশ</title>
+  <meta name="description" content="নির্মাণধারার সেবা ব্যবহারের শর্তাবলী, গোপনীয়তা নীতি, প্রজেক্ট চুক্তি সংক্রান্ত নিয়মকানুন এবং আইনি তথ্য।" />
+  <meta name="keywords" content="নির্মাণধারা শর্তাবলী, নির্মাণ চুক্তি, ইন্টেরিয়র ডিজাইন শর্ত, নির্মাণ কোম্পানি নীতিমালা বাংলাদেশ" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nirmandhara.com/terms.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nirmandhara.com/terms.html" />
+  <meta property="og:title" content="শর্তাবলী | নির্মাণধারা" />
+  <meta property="og:description" content="নির্মাণধারার সেবা ব্যবহারের শর্তাবলী ও নীতিমালা।" />
+  <link rel="icon" type="image/x-icon" href="logo.ico" />
+  <link rel="apple-touch-icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ── TERMS PAGE ── */
+    .terms-layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+
+    /* Sticky sidebar TOC */
+    .terms-toc {
+      position: sticky;
+      top: 100px;
+    }
+    .terms-toc-inner {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+    }
+    .terms-toc h3 {
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(184,144,46,0.12);
+    }
+    .terms-toc ul { display: flex; flex-direction: column; gap: 4px; }
+    .terms-toc ul li a {
+      display: block;
+      font-size: 0.83rem;
+      color: var(--faint);
+      padding: 7px 10px;
+      border-radius: var(--radius);
+      transition: var(--transition);
+      line-height: 1.4;
+    }
+    .terms-toc ul li a:hover {
+      color: var(--gold);
+      background: var(--gold-bg2);
+    }
+    .terms-toc ul li a.active {
+      color: var(--gold);
+      background: var(--gold-bg);
+      border-left: 2px solid var(--gold);
+      padding-left: 12px;
+    }
+
+    /* Content */
+    .terms-content {}
+    .terms-section {
+      margin-bottom: 56px;
+      scroll-margin-top: 100px;
+    }
+    .terms-section:last-child { margin-bottom: 0; }
+
+    .terms-section-num {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--gold-bg);
+      line-height: 1;
+      margin-bottom: -10px;
+      display: block;
+    }
+    .terms-section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .terms-section h2 em { color: var(--gold); font-style: normal; }
+    .terms-section p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.9;
+      margin-bottom: 14px;
+    }
+    .terms-section p:last-child { margin-bottom: 0; }
+
+    .terms-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 16px 0;
+    }
+    .terms-list li {
+      display: flex;
+      gap: 12px;
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+    .terms-list li::before {
+      content: '▸';
+      color: var(--gold);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* Info boxes */
+    .terms-info-box {
+      background: rgba(184,144,46,0.04);
+      border: 1px solid var(--gold-border);
+      border-left: 3px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin: 20px 0;
+      font-size: 0.87rem;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+    .terms-info-box strong { color: var(--gold); }
+
+    .terms-warning-box {
+      background: rgba(255,80,80,0.04);
+      border: 1px solid rgba(255,80,80,0.15);
+      border-left: 3px solid #e05050;
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin: 20px 0;
+      font-size: 0.87rem;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    /* Divider */
+    .terms-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-border), transparent);
+      margin: 48px 0;
+    }
+
+    /* Update date */
+    .terms-meta {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+    .terms-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-ui);
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      color: var(--faint);
+    }
+    .terms-meta-item span { color: var(--gold); }
+
+    /* Payment table */
+    .payment-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.87rem;
+    }
+    .payment-table th {
+      background: var(--cream-2);
+      padding: 12px 16px;
+      text-align: left;
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border-bottom: 1px solid var(--gold-border);
+    }
+    .payment-table td {
+      padding: 12px 16px;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border-2);
+    }
+    .payment-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+    @media (max-width: 1024px) {
+      .terms-layout { grid-template-columns: 1fr; }
+      .terms-toc { position: static; }
+      .terms-toc-inner { display: flex; flex-wrap: wrap; gap: 0; }
+      .terms-toc ul { flex-direction: row; flex-wrap: wrap; gap: 6px; }
+      .terms-toc ul li a { padding: 6px 12px; border-radius: 50px; }
+      .terms-toc ul li a.active { padding: 6px 12px; border-left: none; border: 1px solid var(--gold); }
+    }
+    @media (max-width: 768px) {
+      .payment-table { font-size: 0.8rem; }
+      .payment-table th, .payment-table td { padding: 10px 12px; }
+    }
+  </style>
+</head>
+<body class="light-nav">
+
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <button class="nav-toggle" aria-label="মেনু"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">হোম</a>
+        <a href="services.html">সেবাসমূহ</a>
+        <a href="about.html">আমাদের সম্পর্কে</a>
+        <a href="contact.html">যোগাযোগ</a>
+        <a href="terms.html" class="active">শর্তাবলী</a>
+      </div>
+      <a href="https://wa.me/8801620144641" target="_blank" rel="noopener" class="nav-wa">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        হোয়াটসঅ্যাপ
+      </a>
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="নির্মাণধারা" class="nav-logo-img" onerror="this.src='logo.jpg';" /></a>
+    </div>
+    <nav class="nav-mobile">
+      <a href="index.html">🏠 হোম</a>
+      <a href="services.html">✦ সেবাসমূহ</a>
+      <a href="about.html">ℹ️ আমাদের সম্পর্কে</a>
+      <a href="contact.html">📞 যোগাযোগ</a>
+      <a href="terms.html" class="active">📄 শর্তাবলী</a>
+      <a href="https://wa.me/8801620144641" target="_blank" class="nav-mobile-wa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        হোয়াটসঅ্যাপে বার্তা পাঠান
+      </a>
+    </nav>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-content container">
+    <div class="breadcrumb"><a href="index.html">হোম</a><span>/</span><span>শর্তাবলী</span></div>
+    <h1>শর্তাবলী ও <em style="font-style:italic;color:var(--gold);">নীতিমালা</em></h1>
+    <p>নির্মাণধারার সেবা ব্যবহারের নিয়মকানুন, চুক্তির শর্ত ও আইনি তথ্য।</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Meta info -->
+    <div class="terms-meta">
+      <div class="terms-meta-item">📅 সর্বশেষ আপডেট: <span>জানুয়ারি ২০২৪</span></div>
+      <div class="terms-meta-item">🏛️ প্রতিষ্ঠান: <span>নির্মাণধারা</span></div>
+      <div class="terms-meta-item">📍 প্রযোজ্য: <span>বাংলাদেশ</span></div>
+      <div class="terms-meta-item">🔢 লাইসেন্স: <span>XXXXX</span></div>
+    </div>
+
+    <div class="terms-layout">
+
+      <!-- TOC Sidebar -->
+      <aside class="terms-toc" aria-label="বিষয়বস্তুর তালিকা">
+        <div class="terms-toc-inner">
+          <h3>বিষয়বস্তু</h3>
+          <ul>
+            <li><a href="#t1" class="active">১. পরিচিতি</a></li>
+            <li><a href="#t2">২. সেবার শর্তাবলী</a></li>
+            <li><a href="#t3">৩. পেমেন্ট নীতি</a></li>
+            <li><a href="#t4">৪. প্রজেক্ট চুক্তি</a></li>
+            <li><a href="#t5">৫. বাতিল নীতি</a></li>
+            <li><a href="#t6">৬. মেধাসম্পদ</a></li>
+            <li><a href="#t7">৭. গোপনীয়তা নীতি</a></li>
+            <li><a href="#t8">৮. দায়বদ্ধতা</a></li>
+            <li><a href="#t9">৯. গ্যারান্টি</a></li>
+            <li><a href="#t10">১০. আইনি বিষয়</a></li>
+            <li><a href="#t11">১১. যোগাযোগ</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Content -->
+      <main class="terms-content">
+
+        <div class="terms-info-box">
+          <strong>গুরুত্বপূর্ণ:</strong> নির্মাণধারার যেকোনো সেবা গ্রহণ করার আগে অনুগ্রহ করে এই শর্তাবলী মনোযোগ দিয়ে পড়ুন। সেবা গ্রহণ করার মাধ্যমে আপনি এই শর্তাবলীতে সম্মতি জানাচ্ছেন।
+        </div>
+
+        <!-- 1 -->
+        <div class="terms-section" id="t1">
+          <span class="terms-section-num">০১</span>
+          <h2>পরিচিতি ও <em>সাধারণ তথ্য</em></h2>
+          <p>নির্মাণধারা (Nirmandhara) বাংলাদেশের একটি সরকার অনুমোদিত, লাইসেন্সপ্রাপ্ত আর্কিটেকচার, ইন্টেরিয়র ডিজাইন, রিয়েল এস্টেট ও নির্মাণ প্রতিষ্ঠান। আমাদের ওয়েবসাইট nirmandhara.com এবং এই শর্তাবলী আমাদের সকল সেবার জন্য প্রযোজ্য।</p>
+          <p>আমাদের ট্রেড লাইসেন্স নম্বর <strong style="color:var(--gold);">XXXXX</strong> এবং নিবন্ধন নম্বর <strong style="color:var(--gold);">XXXXX</strong>। আমরা বাংলাদেশ সরকারের প্রযোজ্য সকল আইন ও বিধিমালা মেনে চলি।</p>
+          <ul class="terms-list">
+            <li>এই শর্তাবলী বাংলাদেশের আইন অনুসারে প্রণীত।</li>
+            <li>যেকোনো বিবাদের ক্ষেত্রে বাংলাদেশের আদালতের এখতিয়ার প্রযোজ্য।</li>
+            <li>এই শর্তাবলী পরিবর্তনের অধিকার নির্মাণধারা সংরক্ষণ করে।</li>
+          </ul>
+        </div>
+
+        <div class="terms-divider"></div>
+
+        <!-- 2 -->
+        <div class="terms-section" id="t2">
+          <span class="terms-section-num">০২</span>
+          <h2>সেবার <em>শর্তাবলী</em></h2>
+          <p>নির্মাণধারা নিম্নোক্ত সেবাসমূহ প্রদান করে থাকে:</p>
+          <ul class="terms-list">
+            <li>আর্কিটেকচারাল ডিজাইন ও পরিকল্পনা</li>
+            <li>ইন্টেরিয়র ডিজাইন ও বাস্তবায়ন</li>
+            <li>সম্পূর্ণ নির্মাণ কাজ পরিচালনা</li>
+            <li>রিয়েল এস্টেট ক্রয়-বিক্রয় পরামর্শ</li>
+            <li>নির্মাণ সামগ্রী আমদানি ও পাইকারি বিক্রয়</li>
+            <li>প্ল্যাটিনাম এক্সক্লুসিভ প্যাকেজ সেবা</li>
+          </ul>
+          <p>সেবা গ্রহণের জন্য ক্লায়েন্টকে সঠিক ও সম্পূর্ণ তথ্য প্রদান করতে হবে। মিথ্যা তথ্য প্রদানের কারণে কোনো ক্ষতি হলে নির্মাণধারা দায়ী থাকবে না।</p>
+          <div class="terms-info-box">
+            <strong>নোট:</strong> আমাদের সকল সেবার জন্য প্রাথমিক পরামর্শ বিনামূল্যে প্রদান করা হয়। বিস্তারিত পরামর্শ ও পরিকল্পনা সেবার জন্য নির্ধারিত মূল্য প্রযোজ্য।
+          </div>
+        </div>
+
+        <div class="terms-divider"></div>
+
+        <!-- 3 -->
+        <div class="terms-section" id="t3">
+          <span class="terms-section-num">০৩</span>
+          <h2>পেমেন্ট <em>নীতি</em></h2>
+          <p>নির্মাণধারার সাথে চুক্তিবদ্ধ হওয়ার পরে নিম্নোক্ত পেমেন্ট কাঠামো অনুসরণ করতে হবে:</p>
+
+          <table class="payment-table">
+            <thead>
+              <tr>
+                <th>পর্যায়</th>
+                <th>পরিমাণ</th>
+                <th>সময়</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>অগ্রিম (অ্যাডভান্স)</td>
+                <td>মোট মূল্যের ৩০%</td>
+                <td>চুক্তি স্বাক্ষরের সময়</td>
+              </tr>
+              <tr>
+                <td>মধ্যবর্তী কিস্তি</td>
+                <td>মোট মূল্যের ৪০%</td>
+                <td>কাজ ৫০% সম্পন্ন হলে</td>
+              </tr>
+              <tr>
+                <td>চূড়ান্ত কিস্তি</td>
+                <td>মোট মূল্যের ৩০%</td>
+                <td>প্রজেক্ট সম্পন্নের পরে</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <ul class="terms-list">
+            <li>পেমেন্ট নগদ, ব্যাংক ট্রান্সফার বা মোবাইল ব্যাংকিং-এর মাধ্যমে গ্রহণযোগ্য।</li>
+            <li>নির্ধারিত সময়ে পেমেন্ট না করলে প্রজেক্ট সাময়িকভাবে স্থগিত হতে পারে।</li>
+            <li>সকল পেমেন্টের রশিদ/ইনভয়েস প্রদান করা হবে।</li>
+            <li>আলোচনার ভিত্তিতে কিস্তির সংখ্যা ও পরিমাণ পরিবর্তন করা যেতে পারে।</li>
+          </ul>
+        </div>
+
+        <div class="terms-divider"></div>
+
+        <!-- 4 -->
+        <div class="terms-section" id="t4">
+          <span class="terms-section-num">০৪</span>
+          <h2>প্রজেক্ট <em>চুক্তি</em></h2>
+          <p>প্রতিটি প্রজেক্টের জন্য একটি বিস্তারিত লিখিত চুক্তি স্বাক্ষরিত হবে। চুক্তিতে নিম্নোক্ত বিষয়সমূহ অন্তর্ভুক্ত থাকবে:</p>
+          <ul class="terms-list">
+            <li>প্রজেক্টের সম্পূর্ণ বিবরণ ও কাজের পরিধি (Scope of Work)</li>
+            <li>মোট মূল্য ও পেমেন্টের সময়সূচি</li>
+            <li>প্রজেক্ট সম্পন্নের আনুমানিক সময়সীমা</li>
+            <li>ব্যবহৃত উপকরণের তালিকা ও মান</li>
+            <li>পরিবর্তন ও সংশোধনের নিয়মাবলী</li>
+            <li>ওয়ারেন্টি ও গ্যারান্টির শর্তাবলী</li>
+          </ul>
+          <div class="terms-info-box">
+            <strong>গুরুত্বপূর্ণ:</strong> চুক্তির বাইরে কোনো অতিরিক্ত কাজ করতে হলে উভয় পক্ষের সম্মতিতে চুক্তির সংশোধন করতে হবে এবং অতিরিক্ত মূল্য পরিশোধ করতে হবে।
+          </div>
+        </div>
+
+        <div class="terms-divider"></div>
+
+        <!-- 5 -->
+        <div class="terms-section" id="t5">
+          <span class="terms-section-num">০৫</span>
+          <h2>বাতিল ও <em>পরিবর্তন নীতি</em></h2>
+          <p>প্রজেক্ট বাতিল বা পরিবর্তনের ক্ষেত্রে নিম্নোক্ত নীতি প্রযোজ্য:</p>
+          <ul class="terms-list">
+            <li><strong>চুক্তির ৭ দিনের মধ্যে বাতিল:</strong> অগ্রিম অর্থের ৫০% ফেরত প্রযোজ্য।</li>
+            <li><strong>৭ দিন পরে বাতিল:</strong> ইতিমধ্যে সম্পন্ন কাজের মূল্য কাটা যাবে, বাকি ফেরত পাওয়া যাবে।</li>
+            <li><strong>কাজ শুরুর পরে বাতিল:</strong> সম্পন্ন কাজের সম্পূর্ণ মূল্য ক্লায়েন্টকে পরিশোধ করতে হবে।</li>
+            <li><strong>ডিজাইন পরিবর্তন:</strong> ডিজাইন অনুমোদনের আগে বিনামূল্যে পরিবর্তন করা যাবে।</li>
+          </ul>
+          <div class="terms-warning-box">
+            ⚠️ <strong>সতর্কতা:</strong> নির্মাণ শুরুর পরে ডিজাইনে বড় পরিবর্তন করলে অতিরিক্ত খরচ ও সময় লাগতে পারে। তাই ডিজাইন চূড়ান্ত করার আগে সকল বিষয় নিশ্চিত করুন।
+          </div>
+        </div>
+
+        <div class="terms-divider"></div>
+
+        <!-- 6 -->
+        <div class="terms-section" id="t6">
+          <span class="terms-section-num">০৬</span>
+          <h2>মেধাসম্পদ ও <em>ডিজাইন অধিকার</em></h2>
+          <p>নির্মাণধারা কর্তৃক প্রস্তুতকৃত সকল ডিজাইন, নকশা, ড্রয়িং ও ভিজ্যুয়ালাইজেশনের মেধাসম্পদ অধিকার (Intellectual Property Rights) নির্মাণধারার।</p>
+          <ul class="terms-list">
+            <li>চুক্তিকৃত প্রজেক্টের ডিজাইন ক্লায়েন্ট ব্যবহার করতে পারবেন।</li>
+            <li>ডিজাইন তৃতীয় পক্ষের কাছে বিক্রি বা হস্তান্তর করা যাবে না।</li>
+            <li>নির্মাণধারা তার পোর্টফোলিওতে সম্পন্ন প্রজেক্টের ছবি ব্যবহার করতে পারবে।</li>
+            <li>ক্লায়েন্ট ইচ্ছা করলে ছবি ব্যবহারে সম্মতি প্রত্যাহার করতে পারবেন।</li>
+          </ul>
+        </div>
+
+        <div class="terms-divider"></div>
+
+        <!-- 7 -->
+        <div class="terms-section" id="t7">
+          <span class="terms-section-num">০৭</span>
+          <h2>গোপনীয়তা <em>নীতি</em></h2>
+          <p>নির্মাণধারা আপনার ব্যক্তিগত তথ্যের নিরাপত্তা ও গোপনীয়তাকে সর্বোচ্চ গুরুত্ব দেয়।</p>
+          <ul class="terms-list">
+            <li>আপনার প্রদত্ত নাম, ফোন, ইমেইল ও প্রজেক্টের তথ্য শুধুমাত্র সেবা প্রদানের উদ্দেশ্যে ব্যবহার করা হবে।</li>
+            <li>আপনার অনুমতি ছাড়া তৃতীয় পক্ষের কাছে কোনো তথ্য শেয়ার করা হবে না।</li>
+            <li>হোয়াটসঅ্যাপ বার্তার মাধ্যমে প্রেরিত তথ্য যোগাযোগের উদ্দেশ্যে ব্যবহৃত হয়।</li>
+            <li>আপনার তথ্য সুরক্ষিত রাখতে আমরা প্রয়োজনীয় ব্যবস্থা গ্রহণ করি।</li>
+          </ul>
+          <div class="terms-info-box">
+            <strong>কুকি নীতি:</strong> আমাদের ওয়েবসাইট আপনার ব্রাউজিং অভিজ্ঞতা উন্নত করতে কুকি ব্যবহার করতে পারে। ওয়েবসাইট ব্যবহার করার মাধ্যমে আপনি কুকি ব্যবহারে সম্মতি দিচ্ছেন।
+          </div>
+        </div>
+
+        <div class="terms-divider"></div>
+
+        <!-- 8 -->
+        <div class="terms-section" id="t8">
+          <span class="terms-section-num">০৮</span>
+          <h2>দায়বদ্ধতা ও <em>সীমাবদ্ধতা</em></h2>
+          <p>নির্মাণধারা নিম্নোক্ত বিষয়সমূহে দায়বদ্ধতা স্বীকার করে:</p>
+          <ul class="terms-list">
+            <li>নির্ধারিত মান অনুযায়ী কাজ সম্পন্ন করা।</li>
+            <li>চুক্তিতে উল্লিখিত সময়সীমার মধ্যে কাজ সম্পন্ন করার চেষ্টা করা।</li>
+            <li>ব্যবহৃত উপকরণের মান নিশ্চিত করা।</li>
+            <li>কাজের ত্রুটির ক্ষেত্রে বিনামূল্যে সংশোধন করা।</li>
+          </ul>
+          <p>তবে নির্মাণধারা নিম্নোক্ত ক্ষেত্রে দায়বদ্ধ থাকবে না:</p>
+          <ul class="terms-list">
+            <li>প্রাকৃতিক দুর্যোগ বা অপ্রত্যাশিত পরিস্থিতির কারণে বিলম্ব।</li>
+            <li>ক্লায়েন্টের ভুল তথ্য প্রদানের কারণে সৃষ্ট সমস্যা।</li>
+            <li>অননুমোদিত পরিবর্তনের কারণে কাঠামোগত ক্ষতি।</li>
+          </ul>
+        </div>
+
+        <div class="terms-divider"></div>
+
+        <!-- 9 -->
+        <div class="terms-section" id="t9">
+          <span class="terms-section-num">০৯</span>
+          <h2>গ্যারান্টি ও <em>ওয়ারেন্টি</em></h2>
+          <p>নির্মাণধারা তার সেবার জন্য নিম্নোক্ত গ্যারান্টি প্রদান করে:</p>
+          <ul class="terms-list">
+            <li><strong>বেসিক প্যাকেজ:</strong> ৬ মাসের কাজের গ্যারান্টি।</li>
+            <li><strong>প্রিমিয়াম প্যাকেজ:</strong> ১ বছরের কাজের গ্যারান্টি।</li>
+            <li><strong>লাক্সারি প্যাকেজ:</strong> ২ বছরের কাজের গ্যারান্টি।</li>
+            <li><strong>প্ল্যাটিনাম প্যাকেজ:</strong> আজীবন কাজের গ্যারান্টি (শর্ত প্রযোজ্য)।</li>
+          </ul>
+          <div class="terms-info-box">
+            <strong>গ্যারান্টির শর্ত:</strong> গ্যারান্টি শুধুমাত্র নির্মাণধারার কাজের ত্রুটির জন্য প্রযোজ্য। অসাবধানতা, প্রাকৃতিক দুর্যোগ বা অননুমোদিত পরিবর্তনের কারণে ক্ষতিতে গ্যারান্টি প্রযোজ্য নয়।
+          </div>
+        </div>
+
+        <div class="terms-divider"></div>
+
+        <!-- 10 -->
+        <div class="terms-section" id="t10">
+          <span class="terms-section-num">১০</span>
+          <h2>আইনি <em>বিষয়াবলী</em></h2>
+          <p>এই শর্তাবলী গণপ্রজাতন্ত্রী বাংলাদেশের আইন অনুসারে পরিচালিত হবে। যেকোনো বিবাদের ক্ষেত্রে প্রথমে আলোচনার মাধ্যমে সমাধানের চেষ্টা করা হবে।</p>
+          <ul class="terms-list">
+            <li>আলোচনায় সমাধান না হলে মধ্যস্থতার মাধ্যমে সমাধানের চেষ্টা করা হবে।</li>
+            <li>মধ্যস্থতায় সমাধান না হলে বাংলাদেশের উপযুক্ত আদালতে মামলা দায়ের করা যাবে।</li>
+            <li>এই শর্তাবলীর যেকোনো অংশ অবৈধ হলে বাকি অংশ কার্যকর থাকবে।</li>
+          </ul>
+          <p>নির্মাণধারা যেকোনো সময় এই শর্তাবলী পরিবর্তন করার অধিকার সংরক্ষণ করে। পরিবর্তনের পরে ওয়েবসাইট ব্যবহার অব্যাহত রাখলে নতুন শর্তাবলীতে সম্মতি দেওয়া হয়েছে বলে গণ্য হবে।</p>
+        </div>
+
+        <div class="terms-divider"></div>
+
+        <!-- 11 -->
+        <div class="terms-section" id="t11">
+          <span class="terms-section-num">১১</span>
+          <h2>যোগাযোগ ও <em>প্রশ্নাবলী</em></h2>
+          <p>এই শর্তাবলী সংক্রান্ত যেকোনো প্রশ্ন বা মতামতের জন্য আমাদের সাথে যোগাযোগ করুন:</p>
+          <div class="terms-info-box">
+            <strong>নির্মাণধারা</strong><br/>
+            📞 হোয়াটসঅ্যাপ / ফোন: +৮৮০ ১৬২০-১৪৪৬৪১<br/>
+            🌐 ওয়েবসাইট: nirmandhara.com<br/>
+            📍 কার্যক্ষেত্র: সমগ্র বাংলাদেশ<br/>
+            🔢 লাইসেন্স নং: XXXXX
+          </div>
+          <div style="margin-top:24px; display:flex; gap:12px; flex-wrap:wrap;">
+            <button class="btn btn-gold" onclick="openWhatsApp('শর্তাবলী সম্পর্কে একটি প্রশ্ন আছে।')">হোয়াটসঅ্যাপে জিজ্ঞেস করুন</button>
+            <a href="contact.html" class="btn btn-outline">যোগাযোগ পেজ →</a>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="logo.png" alt="নির্মাণধারা" class="footer-logo-img" onerror="this.src='logo.jpg';" />
+          <div>
+            <div class="footer-brand-name"><span>নির্মাণ</span>ধারা</div>
+            <div class="footer-tagline">Design Your Dream</div>
+          </div>
+        </div>
+        <p class="footer-desc">বাংলাদেশের শীর্ষস্থানীয় আর্কিটেকচার, ইন্টেরিয়র ডিজাইন ও নির্মাণ প্রতিষ্ঠান।</p>
+        <div class="footer-lic">সরকার অনুমোদিত | লাইসেন্স নং: <span>XXXXX</span></div>
+      </div>
+      <div class="footer-col">
+        <h4>দ্রুত লিংক</h4>
+        <ul>
+          <li><a href="index.html">হোম</a></li>
+          <li><a href="services.html">সেবাসমূহ</a></li>
+          <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+          <li><a href="contact.html">যোগাযোগ</a></li>
+          <li><a href="terms.html">শর্তাবলী</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>আমাদের সেবা</h4>
+        <ul>
+          <li><a href="services.html">আর্কিটেকচারাল ডিজাইন</a></li>
+          <li><a href="services.html">ইন্টেরিয়র ডিজাইন</a></li>
+          <li><a href="services.html">নির্মাণ কাজ</a></li>
+          <li><a href="services.html">রিয়েল এস্টেট</a></li>
+          <li><a href="services.html">প্ল্যাটিনাম প্যাকেজ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>যোগাযোগ</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.41 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91A16 16 0 0 0 14 15.91l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+৮৮০ ১৬২০-১৪৪৬৪১</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>বাংলাদেশ</span>
+        </div>
+        <br/>
+        <button class="btn btn-gold" style="width:100%; justify-content:center;" onclick="openWhatsApp()">হোয়াটসঅ্যাপ করুন</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© ২০২৪ <span>নির্মাণধারা</span>। সকল স্বত্ব সংরক্ষিত। | নিবন্ধন নং: <span>XXXXX</span></p>
+      <div class="footer-social">
+        <a href="#" aria-label="ফেসবুক"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" aria-label="ইনস্টাগ্রাম"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="https://wa.me/8801620144641" target="_blank" rel="noopener" aria-label="হোয়াটসঅ্যাপ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="#" id="wa-float" class="wa-float" aria-label="হোয়াটসঅ্যাপ">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+<script>
+  /* Terms TOC active state on scroll */
+  const sections = document.querySelectorAll('.terms-section[id]');
+  const tocLinks = document.querySelectorAll('.terms-toc a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 130) current = s.id;
+    });
+    tocLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }, { passive: true });
+</script>
+</body>
+</html>
+

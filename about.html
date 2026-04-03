@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="bn" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>আমাদের সম্পর্কে | নির্মাণধারা — বাংলাদেশের শীর্ষ আর্কিটেকচার ও ইন্টেরিয়র ডিজাইন ফার্ম</title>
+  <meta name="description" content="নির্মাণধারা সম্পর্কে জানুন — আমাদের ইতিহাস, দল, লক্ষ্য ও সরকার অনুমোদিত নিবন্ধন। বাংলাদেশে আর্কিটেকচার ও নির্মাণ শিল্পে একটি বিশ্বস্ত নাম।" />
+  <meta name="keywords" content="নির্মাণধারা সম্পর্কে, আর্কিটেকচার কোম্পানি বাংলাদেশ, ইন্টেরিয়র ডিজাইন স্টুডিও ঢাকা, নির্মাণ প্রতিষ্ঠান বাংলাদেশ" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nirmandhara.com/about.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nirmandhara.com/about.html" />
+  <meta property="og:title" content="আমাদের সম্পর্কে | নির্মাণধারা" />
+  <meta property="og:description" content="নির্মাণধারার পরিচিতি, দল ও লক্ষ্য সম্পর্কে জানুন।" />
+  <meta property="og:image" content="https://nirmandhara.com/images/og-about.jpg" />
+  <link rel="icon" type="image/x-icon" href="logo.ico" />
+  <link rel="apple-touch-icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Nirmandhara",
+    "url": "https://nirmandhara.com",
+    "logo": "https://nirmandhara.com/logo.png",
+    "description": "বাংলাদেশের শীর্ষস্থানীয় আর্কিটেকচার, ইন্টেরিয়র ডিজাইন ও নির্মাণ প্রতিষ্ঠান।",
+    "areaServed": "Bangladesh",
+    "foundingDate": "2014",
+    "numberOfEmployees": "50+"
+  }
+  </script>
+  <style>
+    /* ABOUT PAGE */
+    .about-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .about-intro-img {
+      position: relative;
+    }
+    .about-img-main {
+      width: 100%;
+      aspect-ratio: 4/5;
+      background: var(--cream-2);
+      border: 1px dashed var(--gold-border);
+      border-radius: var(--radius-lg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: rgba(232,160,32,0.3);
+      font-family: var(--font-ui);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+    .about-img-main svg { width: 40px; height: 40px; }
+    .about-img-badge {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      background: var(--gold);
+      color: var(--ink);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(184,144,46,0.35);
+    }
+    .about-img-badge-num {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+    .about-img-badge-label {
+      font-family: var(--font-ui);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    .about-story p { font-size: 0.95rem; color: var(--muted); line-height: 1.9; margin-bottom: 18px; }
+
+    /* Values */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .value-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 36px 28px;
+      text-align: center;
+      transition: var(--transition);
+    }
+    .value-card:hover { border-color: rgba(184,144,46,0.2); transform: translateY(-4px); }
+    .value-icon { font-size: 2.8rem; display: block; margin-bottom: 16px; }
+    .value-card h3 { font-size: 1.1rem; margin-bottom: 12px; }
+    .value-card p { font-size: 0.85rem; color: var(--faint); line-height: 1.75; }
+
+    /* Team */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .team-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      text-align: center;
+      transition: var(--transition);
+    }
+    .team-card:hover { border-color: rgba(184,144,46,0.2); transform: translateY(-5px); }
+    .team-photo {
+      width: 100%;
+      aspect-ratio: 1;
+      background: var(--cream-2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: rgba(232,160,32,0.3);
+      font-family: var(--font-ui);
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: 1px dashed var(--gold-bg);
+    }
+    .team-photo svg { width: 32px; height: 32px; }
+    .team-info { padding: 20px; }
+    .team-name { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+    .team-role {
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .team-desc { font-size: 0.8rem; color: var(--faint); margin-top: 10px; line-height: 1.6; }
+
+    /* License Box */
+    .license-box {
+      background: linear-gradient(135deg, var(--dark-2), #1a1400);
+      border: 1px solid rgba(232,160,32,0.3);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .license-box::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .license-seal {
+      text-align: center;
+    }
+    .seal-circle {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 2px solid var(--gold);
+      margin: 0 auto 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--gold-bg2);
+      box-shadow: 0 0 40px var(--gold-border);
+    }
+    .seal-emblem { font-size: 2.5rem; }
+    .seal-text {
+      font-family: var(--font-ui);
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 4px;
+    }
+    .license-details h3 { font-size: 1.4rem; margin-bottom: 16px; }
+    .license-details p { font-size: 0.9rem; color: var(--muted); line-height: 1.85; margin-bottom: 20px; }
+    .license-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.85rem;
+    }
+    .license-row:last-child { border-bottom: none; }
+    .license-row .key { color: var(--faint); font-family: var(--font-ui); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; }
+    .license-row .val { color: var(--gold); font-weight: 600; }
+
+    /* Timeline */
+    .timeline {
+      position: relative;
+      padding-left: 36px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      bottom: 8px;
+      width: 1px;
+      background: linear-gradient(180deg, var(--gold), var(--gold-hover), transparent);
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 36px;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -40px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 12px rgba(184,144,46,0.5);
+    }
+    .timeline-year {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+    .timeline-title { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+    .timeline-desc { font-size: 0.84rem; color: var(--faint); line-height: 1.7; }
+
+    /* Stats row */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border-2);
+      border: 1px solid var(--border-2);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .stat-box {
+      background: var(--white);
+      padding: 40px 28px;
+      text-align: center;
+      transition: var(--transition);
+    }
+    .stat-box:hover { background: var(--cream-2); }
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .stat-label {
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--faint);
+    }
+
+    @media (max-width: 1024px) {
+      .about-intro { grid-template-columns: 1fr; gap: 48px; }
+      .about-img-main { aspect-ratio: 16/9; }
+      .values-grid { grid-template-columns: 1fr 1fr; }
+      .team-grid { grid-template-columns: 1fr 1fr; }
+      .license-box { grid-template-columns: 1fr; gap: 32px; }
+      .stats-row { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .values-grid { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: 1fr 1fr; }
+      .license-box { padding: 32px 24px; }
+      .stats-row { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .team-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="light-nav">
+
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <button class="nav-toggle" aria-label="মেনু"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">হোম</a>
+        <a href="services.html">সেবাসমূহ</a>
+        <a href="about.html" class="active">আমাদের সম্পর্কে</a>
+        <a href="contact.html">যোগাযোগ</a>
+        <a href="terms.html">শর্তাবলী</a>
+      </div>
+      <a href="https://wa.me/8801620144641" target="_blank" rel="noopener" class="nav-wa">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        হোয়াটসঅ্যাপ
+      </a>
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="নির্মাণধারা" class="nav-logo-img" onerror="this.src='logo.jpg';" /></a>
+    </div>
+    <nav class="nav-mobile">
+      <a href="index.html">🏠 হোম</a>
+      <a href="services.html">✦ সেবাসমূহ</a>
+      <a href="about.html" class="active">ℹ️ আমাদের সম্পর্কে</a>
+      <a href="contact.html">📞 যোগাযোগ</a>
+      <a href="terms.html">📄 শর্তাবলী</a>
+      <a href="https://wa.me/8801620144641" target="_blank" class="nav-mobile-wa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        হোয়াটসঅ্যাপে বার্তা পাঠান
+      </a>
+    </nav>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-content container">
+    <div class="breadcrumb"><a href="index.html">হোম</a><span>/</span><span>আমাদের সম্পর্কে</span></div>
+    <h1>আমাদের <em style="font-style:italic;color:var(--gold);">পরিচয়</em></h1>
+    <p>বাংলাদেশে স্বপ্নের নির্মাণ ও ডিজাইনে এক দশকেরও বেশি অভিজ্ঞতা — নির্মাণধারার গল্প।</p>
+  </div>
+</div>
+
+<!-- ABOUT INTRO -->
+<section class="section">
+  <div class="container">
+    <div class="about-intro">
+      <div class="about-intro-img">
+        <div class="about-img-main">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>কোম্পানির ছবি</span>
+        </div>
+        <div class="about-img-badge">
+          <div class="about-img-badge-num">১০+</div>
+          <div class="about-img-badge-label">বছরের অভিজ্ঞতা</div>
+        </div>
+      </div>
+      <div class="about-story">
+        <span class="section-label">আমাদের গল্প</span>
+        <h2 class="section-title">নির্মাণধারা — <em>স্বপ্নের</em> নির্মাতা</h2>
+        <div class="gold-line"><span></span></div>
+        <p>নির্মাণধারার যাত্রা শুরু হয়েছিল একটি সহজ কিন্তু শক্তিশালী বিশ্বাস নিয়ে — প্রতিটি মানুষ তার স্বপ্নের বাড়ি বা কর্মস্থল পাওয়ার অধিকার রাখে। আমরা সেই স্বপ্নকে বাস্তবে রূপ দিতে প্রতিশ্রুতিবদ্ধ।</p>
+        <p>বাংলাদেশের নির্মাণ শিল্পে আমরা একটি বিশ্বস্ত ও অভিজ্ঞ প্রতিষ্ঠান হিসেবে নিজেদের প্রতিষ্ঠিত করেছি। আমাদের দক্ষ আর্কিটেক্ট, ইন্টেরিয়র ডিজাইনার এবং নির্মাণ প্রকৌশলীদের সমন্বয়ে গঠিত টিম প্রতিটি প্রজেক্টে সর্বোচ্চ মান নিশ্চিত করে।</p>
+        <p>সরকার অনুমোদিত ও নিবন্ধিত প্রতিষ্ঠান হিসেবে আমরা সকল আইনি বাধ্যবাধকতা মেনে চলি এবং আমাদের গ্রাহকদের স্বার্থ সুরক্ষায় সর্বদা সচেষ্ট।</p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:24px;">
+          <button class="btn btn-gold" onclick="openWhatsApp('নির্মাণধারা সম্পর্কে আরও জানতে চাই।')">যোগাযোগ করুন</button>
+          <a href="services.html" class="btn btn-outline">আমাদের সেবা →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section-sm" style="background:var(--dark-2);">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-box" data-animate>
+        <div class="stat-num shimmer-text">৫০০+</div>
+        <div class="stat-label">সম্পন্ন প্রজেক্ট</div>
+      </div>
+      <div class="stat-box" data-animate>
+        <div class="stat-num shimmer-text">৩০০+</div>
+        <div class="stat-label">সন্তুষ্ট গ্রাহক</div>
+      </div>
+      <div class="stat-box" data-animate>
+        <div class="stat-num shimmer-text">৫০+</div>
+        <div class="stat-label">দক্ষ কর্মী</div>
+      </div>
+      <div class="stat-box" data-animate>
+        <div class="stat-num shimmer-text">৬৪</div>
+        <div class="stat-label">জেলায় সেবা</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section" aria-labelledby="values-heading">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:52px;">
+      <span class="section-label">আমাদের মূলনীতি</span>
+      <h2 class="section-title" id="values-heading">যা আমাদের <em>আলাদা</em> করে</h2>
+      <div class="gold-line" style="max-width:200px; margin-inline:auto;"><span></span></div>
+    </div>
+    <div class="values-grid">
+      <div class="value-card" data-animate>
+        <span class="value-icon">🎯</span>
+        <h3>লক্ষ্য নির্ধারণ</h3>
+        <p>প্রতিটি প্রজেক্টে স্পষ্ট লক্ষ্য নির্ধারণ করে সেদিকে এগিয়ে যাওয়া আমাদের মূলনীতি।</p>
+      </div>
+      <div class="value-card" data-animate>
+        <span class="value-icon">💎</span>
+        <h3>গুণগত মান</h3>
+        <p>উন্নত মানের উপকরণ ও অভিজ্ঞ দক্ষতায় প্রতিটি কাজে সর্বোচ্চ মান বজায় রাখা।</p>
+      </div>
+      <div class="value-card" data-animate>
+        <span class="value-icon">🤝</span>
+        <h3>বিশ্বস্ততা</h3>
+        <p>গ্রাহকের সাথে সৎ ও স্বচ্ছ সম্পর্ক বজায় রেখে আস্থার ভিত্তিতে কাজ করা।</p>
+      </div>
+      <div class="value-card" data-animate>
+        <span class="value-icon">⚡</span>
+        <h3>দক্ষতা</h3>
+        <p>সময় ও সম্পদের সর্বোত্তম ব্যবহার নিশ্চিত করে দ্রুত ও কার্যকর সমাধান দেওয়া।</p>
+      </div>
+      <div class="value-card" data-animate>
+        <span class="value-icon">🌱</span>
+        <h3>টেকসই উন্নয়ন</h3>
+        <p>পরিবেশবান্ধব নির্মাণ পদ্ধতি ও উপকরণ ব্যবহারে টেকসই ভবিষ্যৎ গড়ে তোলা।</p>
+      </div>
+      <div class="value-card" data-animate>
+        <span class="value-icon">🔬</span>
+        <h3>উদ্ভাবন</h3>
+        <p>নতুন প্রযুক্তি ও ডিজাইন ট্রেন্ড অনুসরণ করে সর্বদা আধুনিক সমাধান প্রদান।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LICENSE -->
+<section class="section" style="background:var(--dark-2);" aria-labelledby="license-heading">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:52px;">
+      <span class="section-label">বৈধতা ও স্বীকৃতি</span>
+      <h2 class="section-title" id="license-heading">সরকার <em>অনুমোদিত</em> প্রতিষ্ঠান</h2>
+      <div class="gold-line" style="max-width:200px; margin-inline:auto;"><span></span></div>
+    </div>
+    <div class="license-box" data-animate>
+      <div class="license-seal">
+        <div class="seal-circle">
+          <div class="seal-emblem">🏛️</div>
+          <div class="seal-text">অনুমোদিত</div>
+        </div>
+        <div style="font-family:var(--font-display); font-size:1.1rem; color:var(--gold); margin-bottom:4px;">গণপ্রজাতন্ত্রী বাংলাদেশ</div>
+        <div style="font-family:var(--font-ui); font-size:0.7rem; letter-spacing:0.15em; color:var(--faint); text-transform:uppercase;">সরকার কর্তৃক অনুমোদিত</div>
+      </div>
+      <div class="license-details">
+        <h3>আমাদের নিবন্ধন ও লাইসেন্স</h3>
+        <p>নির্মাণধারা বাংলাদেশ সরকারের যথাযথ কর্তৃপক্ষ কর্তৃক অনুমোদিত ও নিবন্ধিত একটি বৈধ ব্যবসায়িক প্রতিষ্ঠান। আমাদের সকল কার্যক্রম আইন ও নিয়মকানুন মেনে পরিচালিত হয়।</p>
+        <div class="license-row">
+          <span class="key">ট্রেড লাইসেন্স নং</span>
+          <span class="val">XXXXX</span>
+        </div>
+        <div class="license-row">
+          <span class="key">নিবন্ধন নং</span>
+          <span class="val">XXXXX</span>
+        </div>
+        <div class="license-row">
+          <span class="key">TIN নং</span>
+          <span class="val">XXXXX</span>
+        </div>
+        <div class="license-row">
+          <span class="key">কার্যক্রমের ক্ষেত্র</span>
+          <span class="val">সমগ্র বাংলাদেশ</span>
+        </div>
+        <div class="license-row">
+          <span class="key">স্থাপিত</span>
+          <span class="val">২০১৪ সাল</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section" aria-labelledby="team-heading">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:52px;">
+      <span class="section-label">আমাদের দল</span>
+      <h2 class="section-title" id="team-heading">অভিজ্ঞ <em>বিশেষজ্ঞ</em> টিম</h2>
+      <div class="gold-line" style="max-width:200px; margin-inline:auto;"><span></span></div>
+    </div>
+    <div class="team-grid">
+      <div class="team-card" data-animate>
+        <div class="team-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>ছবি</span>
+        </div>
+        <div class="team-info">
+          <div class="team-name">প্রধান স্থপতি</div>
+          <div class="team-role">Chief Architect</div>
+          <div class="team-desc">১৫+ বছরের অভিজ্ঞতা সম্পন্ন প্রধান আর্কিটেক্ট।</div>
+        </div>
+      </div>
+      <div class="team-card" data-animate>
+        <div class="team-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>ছবি</span>
+        </div>
+        <div class="team-info">
+          <div class="team-name">ইন্টেরিয়র প্রধান</div>
+          <div class="team-role">Lead Interior Designer</div>
+          <div class="team-desc">লাক্সারি ইন্টেরিয়র ডিজাইনে বিশেষজ্ঞ।</div>
+        </div>
+      </div>
+      <div class="team-card" data-animate>
+        <div class="team-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>ছবি</span>
+        </div>
+        <div class="team-info">
+          <div class="team-name">সিভিল ইঞ্জিনিয়ার</div>
+          <div class="team-role">Sr. Civil Engineer</div>
+          <div class="team-desc">স্ট্রাকচারাল ইঞ্জিনিয়ারিংয়ে বিশেষজ্ঞ।</div>
+        </div>
+      </div>
+      <div class="team-card" data-animate>
+        <div class="team-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>ছবি</span>
+        </div>
+        <div class="team-info">
+          <div class="team-name">প্রজেক্ট ম্যানেজার</div>
+          <div class="team-role">Project Manager</div>
+          <div class="team-desc">প্রজেক্ট সমন্বয় ও সময়মতো বাস্তবায়নে দক্ষ।</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section" style="background:var(--dark-2);">
+  <div class="container">
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items:start;">
+      <div>
+        <span class="section-label">আমাদের যাত্রা</span>
+        <h2 class="section-title">নির্মাণধারার <em>ইতিহাস</em></h2>
+        <div class="gold-line"><span></span></div>
+        <p style="color:var(--muted); font-size:0.9rem; line-height:1.85; margin-bottom:32px;">এক দশকেরও বেশি সময় ধরে আমরা বাংলাদেশের নির্মাণ ও ডিজাইন শিল্পে নিরলসভাবে কাজ করে যাচ্ছি।</p>
+        <button class="btn btn-gold" onclick="openWhatsApp('নির্মাণধারার সম্পর্কে আরও জানতে চাই।')">আমাদের সাথে কাজ করুন →</button>
+      </div>
+      <div class="timeline" data-animate>
+        <div class="timeline-item">
+          <div class="timeline-year">২০১৪</div>
+          <div class="timeline-title">প্রতিষ্ঠা</div>
+          <div class="timeline-desc">ঢাকায় ছোট একটি আর্কিটেকচার অফিস হিসেবে যাত্রা শুরু।</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">২০১৬</div>
+          <div class="timeline-title">সম্প্রসারণ</div>
+          <div class="timeline-desc">ইন্টেরিয়র ডিজাইন বিভাগ চালু ও দল বিস্তার।</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">২০১৮</div>
+          <div class="timeline-title">সরকারি স্বীকৃতি</div>
+          <div class="timeline-desc">সরকারি লাইসেন্স ও নিবন্ধন প্রাপ্তি।</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">২০২১</div>
+          <div class="timeline-title">৩০০+ প্রজেক্ট</div>
+          <div class="timeline-desc">সারা বাংলাদেশে ৩০০+ সফল প্রজেক্ট সম্পন্ন।</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">২০২৪</div>
+          <div class="timeline-title">প্ল্যাটিনাম সেবা চালু</div>
+          <div class="timeline-desc">বিলাসবহুল প্ল্যাটিনাম প্যাকেজ ও সম্পূর্ণ ডিজিটাল সেবা চালু।</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-sm">
+  <div class="container">
+    <div class="cta-band">
+      <span class="section-label" style="display:block;text-align:center;">আমাদের সাথে যোগ দিন</span>
+      <h2>আপনার <em style="color:var(--gold);">স্বপ্নের প্রজেক্ট</em> শুরু করুন</h2>
+      <p>আজই আমাদের বিশেষজ্ঞ দলের সাথে কথা বলুন।</p>
+      <div class="cta-buttons">
+        <button class="btn btn-gold" onclick="openWhatsApp('আস্সালামু আলাইকুম! নির্মাণধারার সাথে আমার প্রজেক্ট নিয়ে আলোচনা করতে চাই।')">হোয়াটসঅ্যাপে যোগাযোগ</button>
+        <a href="contact.html" class="btn btn-outline">যোগাযোগ ফর্ম →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="logo.png" alt="নির্মাণধারা" class="footer-logo-img" onerror="this.src='logo.jpg';" />
+          <div>
+            <div class="footer-brand-name"><span>নির্মাণ</span>ধারা</div>
+            <div class="footer-tagline">Design Your Dream</div>
+          </div>
+        </div>
+        <p class="footer-desc">বাংলাদেশের শীর্ষস্থানীয় আর্কিটেকচার, ইন্টেরিয়র ডিজাইন ও নির্মাণ প্রতিষ্ঠান।</p>
+        <div class="footer-lic">সরকার অনুমোদিত | লাইসেন্স নং: <span>XXXXX</span></div>
+      </div>
+      <div class="footer-col">
+        <h4>দ্রুত লিংক</h4>
+        <ul>
+          <li><a href="index.html">হোম</a></li>
+          <li><a href="services.html">সেবাসমূহ</a></li>
+          <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+          <li><a href="contact.html">যোগাযোগ</a></li>
+          <li><a href="terms.html">শর্তাবলী</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>আমাদের সেবা</h4>
+        <ul>
+          <li><a href="services.html">আর্কিটেকচারাল ডিজাইন</a></li>
+          <li><a href="services.html">ইন্টেরিয়র ডিজাইন</a></li>
+          <li><a href="services.html">নির্মাণ কাজ</a></li>
+          <li><a href="services.html">রিয়েল এস্টেট</a></li>
+          <li><a href="services.html">প্ল্যাটিনাম প্যাকেজ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>যোগাযোগ</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.41 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91A16 16 0 0 0 14 15.91l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+৮৮০ ১৬২০-১৪৪৬৪১</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>বাংলাদেশ</span>
+        </div>
+        <br/>
+        <button class="btn btn-gold" style="width:100%; justify-content:center;" onclick="openWhatsApp()">হোয়াটসঅ্যাপ করুন</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© ২০২৪ <span>নির্মাণধারা</span>। সকল স্বত্ব সংরক্ষিত। | নিবন্ধন নং: <span>XXXXX</span></p>
+      <div class="footer-social">
+        <a href="#" aria-label="ফেসবুক"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" aria-label="ইনস্টাগ্রাম"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="https://wa.me/8801620144641" target="_blank" rel="noopener" aria-label="হোয়াটসঅ্যাপ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="#" id="wa-float" class="wa-float" aria-label="হোয়াটসঅ্যাপ">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+<script src="js/main.js"></script>
+</body>
+</html>
+

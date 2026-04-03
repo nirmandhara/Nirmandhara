@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="bn" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>সেবাসমূহ | নির্মাণধারা — আর্কিটেকচার, ইন্টেরিয়র ডিজাইন ও নির্মাণ সেবা বাংলাদেশ</title>
+  <meta name="description" content="নির্মাণধারার সম্পূর্ণ সেবার তালিকা — আর্কিটেকচারাল ডিজাইন, ইন্টেরিয়র ডিজাইন, নির্মাণ কাজ, রিয়েল এস্টেট, পরামর্শ ও প্ল্যাটিনাম প্যাকেজ। মূল্যসহ বিস্তারিত।" />
+  <meta name="keywords" content="ইন্টেরিয়র ডিজাইন মূল্য বাংলাদেশ, আর্কিটেকচার সেবা, নির্মাণ খরচ, রিয়েল এস্টেট পরামর্শ, নির্মাণধারা সেবা" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nirmandhara.com/services.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nirmandhara.com/services.html" />
+  <meta property="og:title" content="সেবাসমূহ | নির্মাণধারা" />
+  <meta property="og:description" content="আর্কিটেকচার, ইন্টেরিয়র ডিজাইন, নির্মাণ ও রিয়েল এস্টেট সেবা — বাংলাদেশ।" />
+  <meta property="og:image" content="https://nirmandhara.com/images/og-services.jpg" />
+  <link rel="icon" type="image/x-icon" href="logo.ico" />
+  <link rel="apple-touch-icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "provider": { "@type": "LocalBusiness", "name": "Nirmandhara", "url": "https://nirmandhara.com" },
+    "serviceType": ["Architecture", "Interior Design", "Construction", "Real Estate Consulting"],
+    "areaServed": "Bangladesh",
+    "description": "বাংলাদেশে আর্কিটেকচার, ইন্টেরিয়র ডিজাইন, নির্মাণ ও রিয়েল এস্টেট সেবা।"
+  }
+  </script>
+  <style>
+    /* SERVICES PAGE SPECIFIC */
+    .services-hero-icon { font-size: 3.5rem; display:block; margin-bottom:16px; }
+
+    /* Big service cards */
+    .service-full-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      min-height: 300px;
+      transition: var(--transition);
+      margin-bottom: 32px;
+    }
+    .service-full-card:nth-child(even) { grid-template-columns: 1.5fr 1fr; }
+    .service-full-card:nth-child(even) .service-full-img { order: 2; }
+    .service-full-card:nth-child(even) .service-full-body { order: 1; }
+    .service-full-card:hover { border-color: rgba(184,144,46,0.2); box-shadow: var(--shadow-card); }
+    .service-full-img {
+      background: var(--cream-2);
+      border: 2px dashed var(--border-3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: rgba(184,144,46,0.35);
+      font-family: var(--font-ui);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      min-height: 240px;
+    }
+    .service-full-img svg { width: 36px; height: 36px; }
+    .service-full-body { padding: 40px; }
+    .service-full-body .emoji { font-size: 2.4rem; display: block; margin-bottom: 16px; }
+    .service-full-body h2 { font-size: 1.5rem; margin-bottom: 12px; color: var(--ink); }
+    .service-full-body p { font-size: 0.9rem; color: var(--muted); line-height: 1.85; margin-bottom: 20px; }
+    .service-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .service-features span {
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      padding: 5px 14px;
+      background: var(--gold-bg2);
+      border: 1px solid var(--gold-border);
+      border-radius: 50px;
+      color: var(--gold-light);
+    }
+    .service-price-tag {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 6px;
+      padding: 10px 20px;
+      background: var(--gold-bg2);
+      border: 1px solid rgba(232,160,32,0.18);
+      border-radius: var(--radius);
+      margin-bottom: 20px;
+    }
+    .service-price-label { font-family: var(--font-ui); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); }
+    .service-price-amount { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--gold); }
+    .service-price-unit { font-size: 0.78rem; color: var(--faint); }
+
+    /* Pricing Table */
+    .pricing-section { background: var(--ink); }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 52px;
+    }
+    .pricing-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 36px 28px;
+      position: relative;
+      transition: var(--transition);
+    }
+    .pricing-card.popular {
+      border-color: rgba(184,144,46,0.35);
+      background: linear-gradient(160deg, var(--dark-2) 0%, #1a1400 100%);
+    }
+    .pricing-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-card); }
+    .pricing-badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold);
+      color: var(--ink);
+      font-family: var(--font-ui);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 5px 18px;
+      border-radius: 50px;
+      white-space: nowrap;
+    }
+    .pricing-name {
+      font-family: var(--font-ui);
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 12px;
+    }
+    .pricing-price {
+      margin-bottom: 8px;
+    }
+    .pricing-price .amount {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .pricing-price .currency {
+      font-family: var(--font-ui);
+      font-size: 1rem;
+      color: var(--faint);
+      margin-right: 4px;
+    }
+    .pricing-price .unit { font-size: 0.8rem; color: var(--faint); display: block; margin-top: 4px; }
+    .pricing-desc { font-size: 0.84rem; color: var(--faint); margin-bottom: 24px; line-height: 1.7; }
+    .pricing-divider {
+      height: 1px;
+      background: var(--border);
+      margin-bottom: 24px;
+    }
+    .pricing-features { margin-bottom: 28px; }
+    .pricing-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.87rem;
+      color: var(--muted);
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .pricing-features li::before {
+      content: '✓';
+      color: var(--gold);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .pricing-features li.unavailable { opacity: 0.35; }
+    .pricing-features li.unavailable::before { content: '✕'; color: var(--faint); }
+
+    /* Platinum */
+    .platinum-card {
+      background: linear-gradient(135deg, #0f0c00 0%, #1a1400 40%, #0f0c00 100%);
+      border: 1px solid rgba(184,144,46,0.4);
+      border-radius: var(--radius-lg);
+      padding: 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      margin-top: 32px;
+    }
+    .platinum-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), var(--gold-light), var(--gold), transparent);
+    }
+    .platinum-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold-hover), var(--gold), var(--gold-hover), transparent);
+    }
+    .platinum-emblem {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+    .platinum-card h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 16px; }
+    .platinum-card p { font-size: 0.98rem; color: var(--muted); max-width: 580px; margin: 0 auto 32px; line-height: 1.85; }
+    .platinum-perks {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .platinum-perk {
+      text-align: center;
+      padding: 20px 12px;
+      background: rgba(184,144,46,0.04);
+      border: 1px solid rgba(184,144,46,0.12);
+      border-radius: var(--radius);
+    }
+    .platinum-perk-icon { font-size: 1.8rem; display: block; margin-bottom: 10px; }
+    .platinum-perk-label { font-family: var(--font-ui); font-size: 0.72rem; letter-spacing: 0.08em; color: var(--muted); text-transform: uppercase; }
+
+    /* Consultation */
+    .consultation-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    @media (max-width: 1024px) {
+      .service-full-card { grid-template-columns: 1fr !important; }
+      .service-full-card:nth-child(even) .service-full-img { order: 0; }
+      .service-full-card:nth-child(even) .service-full-body { order: 1; }
+      .pricing-grid { grid-template-columns: 1fr 1fr; }
+      .platinum-perks { grid-template-columns: 1fr 1fr; }
+      .consultation-card { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .pricing-grid { grid-template-columns: 1fr; }
+      .platinum-card { padding: 40px 24px; }
+      .platinum-perks { grid-template-columns: 1fr 1fr; }
+      .service-full-body { padding: 28px; }
+    }
+    @media (max-width: 480px) {
+      .platinum-perks { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body class="light-nav">
+
+<!-- NAVBAR (shared) -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <button class="nav-toggle" aria-label="মেনু"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">হোম</a>
+        <a href="services.html" class="active">সেবাসমূহ</a>
+        <a href="about.html">আমাদের সম্পর্কে</a>
+        <a href="contact.html">যোগাযোগ</a>
+        <a href="terms.html">শর্তাবলী</a>
+      </div>
+      <a href="https://wa.me/8801620144641" target="_blank" rel="noopener" class="nav-wa">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        হোয়াটসঅ্যাপ
+      </a>
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="নির্মাণধারা" class="nav-logo-img" onerror="this.src='logo.jpg';" />
+      </a>
+    </div>
+    <nav class="nav-mobile">
+      <a href="index.html">🏠 হোম</a>
+      <a href="services.html" class="active">✦ সেবাসমূহ</a>
+      <a href="about.html">ℹ️ আমাদের সম্পর্কে</a>
+      <a href="contact.html">📞 যোগাযোগ</a>
+      <a href="terms.html">📄 শর্তাবলী</a>
+      <a href="https://wa.me/8801620144641" target="_blank" class="nav-mobile-wa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        হোয়াটসঅ্যাপে বার্তা পাঠান
+      </a>
+    </nav>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-content container">
+    <div class="breadcrumb"><a href="index.html">হোম</a><span>/</span><span>সেবাসমূহ</span></div>
+    <span class="services-hero-icon">✦</span>
+    <h1>আমাদের <em style="font-style:italic;color:var(--gold);">সেবাসমূহ</em></h1>
+    <p>ডিজাইন থেকে বাস্তবায়ন পর্যন্ত — প্রতিটি পদক্ষেপে আমরা আপনার পাশে। বাংলাদেশে সেরা মানের আর্কিটেকচার ও নির্মাণ সেবা।</p>
+  </div>
+</div>
+
+<!-- MAIN SERVICES -->
+<section class="section">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:56px;">
+      <span class="section-label">আমাদের সেবাসমূহ</span>
+      <h2 class="section-title">সম্পূর্ণ <em>ডিজাইন ও নির্মাণ</em> সমাধান</h2>
+      <div class="gold-line" style="max-width:200px;margin-inline:auto;"><span></span></div>
+    </div>
+
+    <!-- Service 1: Architecture -->
+    <div class="service-full-card" data-animate>
+      <div class="service-full-img">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span>আর্কিটেকচার ছবি</span>
+      </div>
+      <div class="service-full-body">
+        <span class="emoji">🏛️</span>
+        <h2>আর্কিটেকচারাল ডিজাইন</h2>
+        <p>আমাদের অভিজ্ঞ আর্কিটেক্ট দল আপনার স্বপ্নের ভবন বা বাড়ির সম্পূর্ণ নকশা প্রস্তুত করে। সরকার অনুমোদিত ড্রয়িং, স্ট্রাকচারাল ডিজাইন এবং ৩ডি ভিজ্যুয়ালাইজেশন সহ।</p>
+        <div class="service-features">
+          <span>ফ্লোর প্ল্যান</span><span>ইলিভেশন ড্রয়িং</span><span>৩ডি রেন্ডারিং</span><span>স্ট্রাকচারাল ডিজাইন</span><span>রাজউক অনুমোদন</span>
+        </div>
+        <div class="service-price-tag">
+          <span class="service-price-label">শুরু হয়</span>
+          <span class="service-price-amount">৳১৫,০০০</span>
+          <span class="service-price-unit">থেকে / প্রজেক্ট</span>
+        </div>
+        <button class="btn btn-gold" onclick="openWhatsApp('আমি আর্কিটেকচারাল ডিজাইন সেবা সম্পর্কে জানতে চাই।')">পরামর্শ নিন →</button>
+      </div>
+    </div>
+
+    <!-- Service 2: Interior -->
+    <div class="service-full-card" data-animate>
+      <div class="service-full-img">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span>ইন্টেরিয়র ছবি</span>
+      </div>
+      <div class="service-full-body">
+        <span class="emoji">🛋️</span>
+        <h2>ইন্টেরিয়র ডিজাইন</h2>
+        <p>আধুনিক, ক্লাসিক বা বিলাসবহুল — যেকোনো স্টাইলে আপনার ঘর বা অফিসকে স্বপ্নের মতো সাজিয়ে তুলুন। ফার্নিচার সিলেকশন, লাইটিং ডিজাইন ও সম্পূর্ণ বাস্তবায়ন সহ।</p>
+        <div class="service-features">
+          <span>থিম ডিজাইন</span><span>ফার্নিচার প্ল্যানিং</span><span>লাইটিং ডিজাইন</span><span>ওয়ালপেপার</span><span>ফলস সিলিং</span><span>সম্পূর্ণ বাস্তবায়ন</span>
+        </div>
+        <div class="service-price-tag">
+          <span class="service-price-label">শুরু হয়</span>
+          <span class="service-price-amount">৳৮০০</span>
+          <span class="service-price-unit">/ বর্গফুট</span>
+        </div>
+        <button class="btn btn-gold" onclick="openWhatsApp('আমি ইন্টেরিয়র ডিজাইন সেবা সম্পর্কে জানতে চাই।')">পরামর্শ নিন →</button>
+      </div>
+    </div>
+
+    <!-- Service 3: Construction -->
+    <div class="service-full-card" data-animate>
+      <div class="service-full-img">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span>নির্মাণ ছবি</span>
+      </div>
+      <div class="service-full-body">
+        <span class="emoji">🏗️</span>
+        <h2>নির্মাণ কাজ</h2>
+        <p>ফাউন্ডেশন খনন থেকে শুরু করে চূড়ান্ত ফিনিশিং পর্যন্ত — সম্পূর্ণ নির্মাণ কাজের দায়িত্ব আমরা নিই। মানসম্পন্ন উপকরণ ও দক্ষ শ্রমিক দিয়ে নির্ধারিত সময়ে কাজ শেষ।</p>
+        <div class="service-features">
+          <span>সিভিল কনস্ট্রাকশন</span><span>রিনোভেশন</span><span>ইলেকট্রিক্যাল</span><span>প্লাম্বিং</span><span>টাইলস ফিনিশিং</span><span>পেইন্টিং</span>
+        </div>
+        <div class="service-price-tag">
+          <span class="service-price-label">শুরু হয়</span>
+          <span class="service-price-amount">৳২,২০০</span>
+          <span class="service-price-unit">/ বর্গফুট</span>
+        </div>
+        <button class="btn btn-gold" onclick="openWhatsApp('আমি নির্মাণ কাজের সেবা সম্পর্কে জানতে চাই।')">পরামর্শ নিন →</button>
+      </div>
+    </div>
+
+    <!-- Service 4: Real Estate -->
+    <div class="service-full-card" data-animate>
+      <div class="service-full-img">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span>রিয়েল এস্টেট ছবি</span>
+      </div>
+      <div class="service-full-body">
+        <span class="emoji">🏢</span>
+        <h2>রিয়েল এস্টেট সেবা</h2>
+        <p>জমি ক্রয়-বিক্রয়ে পরামর্শ, প্রপার্টি মূল্যায়ন, ফ্ল্যাট ডেভেলপমেন্ট এবং বিনিয়োগ পরামর্শ। সঠিক সিদ্ধান্ত নিতে আমাদের বিশেষজ্ঞ দল সর্বদা প্রস্তুত।</p>
+        <div class="service-features">
+          <span>জমি মূল্যায়ন</span><span>ক্রয়-বিক্রয় পরামর্শ</span><span>প্রপার্টি ম্যানেজমেন্ট</span><span>ফ্ল্যাট ডেভেলপমেন্ট</span><span>বিনিয়োগ পরামর্শ</span>
+        </div>
+        <div class="service-price-tag">
+          <span class="service-price-label">পরামর্শ</span>
+          <span class="service-price-amount">৳৫,০০০</span>
+          <span class="service-price-unit">/ সেশন</span>
+        </div>
+        <button class="btn btn-gold" onclick="openWhatsApp('আমি রিয়েল এস্টেট সেবা সম্পর্কে জানতে চাই।')">পরামর্শ নিন →</button>
+      </div>
+    </div>
+
+    <!-- Service 5: Import & Wholesale -->
+    <div class="service-full-card" data-animate>
+      <div class="service-full-img">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span>আমদানি পণ্য ছবি</span>
+      </div>
+      <div class="service-full-body">
+        <span class="emoji">📦</span>
+        <h2>আমদানি ও পাইকারি</h2>
+        <p>বিদেশ থেকে আমদানিকৃত উচ্চমানের নির্মাণ সামগ্রী, ফার্নিচার এবং ইন্টেরিয়র উপকরণ সরাসরি সরবরাহ। পাইকারি ও খুচরা উভয় বিক্রয়।</p>
+        <div class="service-features">
+          <span>আমদানিকৃত টাইলস</span><span>ফার্নিচার</span><span>লাইটিং ফিক্সচার</span><span>বাথরুম ফিটিংস</span><span>কিচেন উপকরণ</span>
+        </div>
+        <div class="service-price-tag">
+          <span class="service-price-label">পরিমাণ ভেদে</span>
+          <span class="service-price-amount">পাইকারি</span>
+          <span class="service-price-unit">মূল্যে</span>
+        </div>
+        <button class="btn btn-gold" onclick="openWhatsApp('আমি আমদানি ও পাইকারি সেবা সম্পর্কে জানতে চাই।')">মূল্য জিজ্ঞেস করুন →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING PACKAGES -->
+<section class="section pricing-section" aria-labelledby="pricing-heading">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:16px;">
+      <span class="section-label">মূল্য পরিকল্পনা</span>
+      <h2 class="section-title" id="pricing-heading">ইন্টেরিয়র ডিজাইন <em>প্যাকেজ</em></h2>
+      <div class="gold-line" style="max-width:200px;margin-inline:auto;"><span></span></div>
+      <p style="color:var(--muted); max-width:520px; margin:16px auto 0; font-size:0.9rem;">আপনার বাজেট ও চাহিদা অনুযায়ী বেছে নিন। সকল প্যাকেজে বিনামূল্যে প্রাথমিক পরামর্শ অন্তর্ভুক্ত।</p>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- Basic -->
+      <div class="pricing-card" data-animate>
+        <div class="pricing-name">বেসিক</div>
+        <div class="pricing-price">
+          <span class="currency">৳</span><span class="amount">৮০০</span>
+          <span class="unit">প্রতি বর্গফুট (সর্বনিম্ন ৫০০ বর্গফুট)</span>
+        </div>
+        <p class="pricing-desc">ছোট বাড়ি বা অ্যাপার্টমেন্টের জন্য সাশ্রয়ী ইন্টেরিয়র সমাধান।</p>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li>ডিজাইন কনসেপ্ট</li>
+          <li>ফ্লোর প্ল্যান</li>
+          <li>ফার্নিচার লেআউট</li>
+          <li>রঙ পরিকল্পনা</li>
+          <li>বেসিক লাইটিং</li>
+          <li class="unavailable">৩ডি ভিজ্যুয়ালাইজেশন</li>
+          <li class="unavailable">প্রিমিয়াম উপকরণ</li>
+        </ul>
+        <button class="btn btn-outline" style="width:100%; justify-content:center;" onclick="openWhatsApp('আমি বেসিক ইন্টেরিয়র প্যাকেজ সম্পর্কে জানতে চাই।')">পরামর্শ নিন</button>
+      </div>
+
+      <!-- Premium (Popular) -->
+      <div class="pricing-card popular" data-animate>
+        <div class="pricing-badge">সবচেয়ে জনপ্রিয়</div>
+        <div class="pricing-name" style="color:var(--gold);">প্রিমিয়াম</div>
+        <div class="pricing-price">
+          <span class="currency">৳</span><span class="amount">১,৪০০</span>
+          <span class="unit">প্রতি বর্গফুট (সর্বনিম্ন ৮০০ বর্গফুট)</span>
+        </div>
+        <p class="pricing-desc">মধ্যবিত্ত থেকে উচ্চ মানের বাড়ি বা অফিসের জন্য সম্পূর্ণ প্যাকেজ।</p>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li>সম্পূর্ণ ডিজাইন কনসেপ্ট</li>
+          <li>৩ডি ভিজ্যুয়ালাইজেশন</li>
+          <li>প্রিমিয়াম ফার্নিচার</li>
+          <li>ডিজাইনার লাইটিং</li>
+          <li>ফলস সিলিং ডিজাইন</li>
+          <li>ওয়ার্ডরোব ও স্টোরেজ</li>
+          <li>ওয়ালপেপার / টেক্সচার</li>
+        </ul>
+        <button class="btn btn-gold" style="width:100%; justify-content:center;" onclick="openWhatsApp('আমি প্রিমিয়াম ইন্টেরিয়র প্যাকেজ সম্পর্কে জানতে চাই।')">পরামর্শ নিন</button>
+      </div>
+
+      <!-- Luxury -->
+      <div class="pricing-card" data-animate>
+        <div class="pricing-name">লাক্সারি</div>
+        <div class="pricing-price">
+          <span class="currency">৳</span><span class="amount">২,৫০০</span>
+          <span class="unit">প্রতি বর্গফুট (সর্বনিম্ন ১২০০ বর্গফুট)</span>
+        </div>
+        <p class="pricing-desc">উচ্চমানের বিলাসবহুল ইন্টেরিয়র — সর্বোচ্চ মানের উপকরণ ও ডিজাইন।</p>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li>কাস্টম ডিজাইন</li>
+          <li>ফটোরিয়ালিস্টিক ৩ডি</li>
+          <li>ইম্পোর্টেড ফার্নিচার</li>
+          <li>প্রিমিয়াম লাইটিং সিস্টেম</li>
+          <li>মার্বেল / গ্রানাইট ফিনিশিং</li>
+          <li>হোম অটোমেশন</li>
+          <li>ডেডিকেটেড প্রজেক্ট ম্যানেজার</li>
+        </ul>
+        <button class="btn btn-outline" style="width:100%; justify-content:center;" onclick="openWhatsApp('আমি লাক্সারি ইন্টেরিয়র প্যাকেজ সম্পর্কে জানতে চাই।')">পরামর্শ নিন</button>
+      </div>
+    </div>
+
+    <!-- PLATINUM -->
+    <div class="platinum-card" data-animate>
+      <div class="platinum-emblem">✦</div>
+      <span class="section-label">সর্বোচ্চ সেবা</span>
+      <h2>প্ল্যাটিনাম <em style="color:var(--gold);">এক্সক্লুসিভ</em> প্যাকেজ</h2>
+      <p>নির্মাণধারার সবচেয়ে বিলাসবহুল ও এক্সক্লুসিভ সেবা। আপনার পুরো প্রজেক্টের সম্পূর্ণ দায়িত্ব আমাদের। ডিজাইন থেকে শুরু করে চাবি হস্তান্তর পর্যন্ত — সব কিছু কাস্টম।</p>
+      <div class="platinum-perks">
+        <div class="platinum-perk">
+          <span class="platinum-perk-icon">👑</span>
+          <div class="platinum-perk-label">ব্যক্তিগত আর্কিটেক্ট</div>
+        </div>
+        <div class="platinum-perk">
+          <span class="platinum-perk-icon">🌍</span>
+          <div class="platinum-perk-label">বিদেশী উপকরণ</div>
+        </div>
+        <div class="platinum-perk">
+          <span class="platinum-perk-icon">⚡</span>
+          <div class="platinum-perk-label">স্মার্ট হোম</div>
+        </div>
+        <div class="platinum-perk">
+          <span class="platinum-perk-icon">🔐</span>
+          <div class="platinum-perk-label">আজীবন গ্যারান্টি</div>
+        </div>
+      </div>
+      <div class="cta-buttons">
+        <button class="btn btn-gold" style="font-size:0.9rem; padding:16px 40px;" onclick="openWhatsApp('আমি প্ল্যাটিনাম প্যাকেজ সম্পর্কে জানতে চাই। আমার প্রজেক্টের বিস্তারিত আলোচনা করতে চাই।')">
+          ✦ কাস্টম মূল্য জানুন
+        </button>
+        <a href="contact.html" class="btn btn-outline">বিস্তারিত জানুন →</a>
+      </div>
+      <p style="margin:20px 0 0; font-size:0.8rem; color:var(--faint);">* প্ল্যাটিনাম প্যাকেজের মূল্য প্রজেক্টের আকার ও চাহিদা অনুযায়ী নির্ধারিত হয়।</p>
+    </div>
+
+    <!-- Consultation -->
+    <div class="consultation-card" style="margin-top:40px;" data-animate>
+      <div>
+        <span class="section-label">বিনামূল্যে পরামর্শ</span>
+        <h2 style="font-size:1.8rem; margin-bottom:14px;">ফ্রি <em style="color:var(--gold);">কনসালটেশন</em></h2>
+        <p style="color:var(--muted); font-size:0.9rem; line-height:1.85; margin-bottom:24px;">
+          আপনার প্রজেক্ট শুরু করার আগে আমাদের বিশেষজ্ঞ দলের সাথে বিনামূল্যে প্রাথমিক পরামর্শ করুন। আমরা আপনার বাজেট, সময় ও চাহিদা বিশ্লেষণ করে সেরা পরিকল্পনা দেব।
+        </p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <button class="btn btn-gold" onclick="openWhatsApp('আমি বিনামূল্যে পরামর্শ সেশন বুক করতে চাই।')">
+            বিনামূল্যে পরামর্শ নিন
+          </button>
+          <a href="contact.html" class="btn btn-dark">ফর্ম পূরণ করুন →</a>
+        </div>
+      </div>
+      <div style="background:var(--dark-3); border:1px dashed var(--gold-border); border-radius:var(--radius-lg); padding:32px; text-align:center;">
+        <div style="font-size:3rem; margin-bottom:12px;">📋</div>
+        <div style="font-family:var(--font-display); font-size:1.3rem; color:var(--gold); margin-bottom:8px;">পরামর্শ সেবা</div>
+        <div style="font-family:var(--font-ui); font-size:1.8rem; font-weight:700; color:var(--white); margin-bottom:4px;">বিনামূল্যে</div>
+        <div style="font-size:0.8rem; color:var(--faint);">প্রাথমিক পরামর্শ</div>
+        <div style="margin-top:16px; font-family:var(--font-ui); font-size:0.72rem; letter-spacing:0.1em; color:var(--faint);">পরবর্তী সেশন: ৳৫,০০০</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-sm">
+  <div class="container">
+    <div class="cta-band">
+      <span class="section-label" style="display:block;text-align:center;">এখনই শুরু করুন</span>
+      <h2>আজই আপনার <em style="color:var(--gold);">প্রজেক্ট</em> শুরু করুন</h2>
+      <p>যেকোনো প্রশ্ন বা পরামর্শের জন্য সরাসরি হোয়াটসঅ্যাপে যোগাযোগ করুন।</p>
+      <div class="cta-buttons">
+        <button class="btn btn-gold" onclick="openWhatsApp('আস্সালামু আলাইকুম! আমি নির্মাণধারার সেবা নিতে আগ্রহী।')">হোয়াটসঅ্যাপে যোগাযোগ</button>
+        <a href="contact.html" class="btn btn-outline">যোগাযোগ ফর্ম →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="logo.png" alt="নির্মাণধারা" class="footer-logo-img" onerror="this.src='logo.jpg';" />
+          <div>
+            <div class="footer-brand-name"><span>নির্মাণ</span>ধারা</div>
+            <div class="footer-tagline">Design Your Dream</div>
+          </div>
+        </div>
+        <p class="footer-desc">বাংলাদেশের শীর্ষস্থানীয় আর্কিটেকচার, ইন্টেরিয়র ডিজাইন ও নির্মাণ প্রতিষ্ঠান।</p>
+        <div class="footer-lic">সরকার অনুমোদিত | লাইসেন্স নং: <span>XXXXX</span></div>
+      </div>
+      <div class="footer-col">
+        <h4>দ্রুত লিংক</h4>
+        <ul>
+          <li><a href="index.html">হোম</a></li>
+          <li><a href="services.html">সেবাসমূহ</a></li>
+          <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+          <li><a href="contact.html">যোগাযোগ</a></li>
+          <li><a href="terms.html">শর্তাবলী</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>আমাদের সেবা</h4>
+        <ul>
+          <li><a href="services.html">আর্কিটেকচারাল ডিজাইন</a></li>
+          <li><a href="services.html">ইন্টেরিয়র ডিজাইন</a></li>
+          <li><a href="services.html">নির্মাণ কাজ</a></li>
+          <li><a href="services.html">রিয়েল এস্টেট</a></li>
+          <li><a href="services.html">প্ল্যাটিনাম প্যাকেজ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>যোগাযোগ</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.41 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91A16 16 0 0 0 14 15.91l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+৮৮০ ১৬২০-১৪৪৬৪১</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>বাংলাদেশ</span>
+        </div>
+        <br/>
+        <button class="btn btn-gold" style="width:100%; justify-content:center;" onclick="openWhatsApp()">হোয়াটসঅ্যাপ করুন</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© ২০২৪ <span>নির্মাণধারা</span>। সকল স্বত্ব সংরক্ষিত। | নিবন্ধন নং: <span>XXXXX</span></p>
+      <div class="footer-social">
+        <a href="#" aria-label="ফেসবুক"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" aria-label="ইনস্টাগ্রাম"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="https://wa.me/8801620144641" target="_blank" rel="noopener" aria-label="হোয়াটসঅ্যাপ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="#" id="wa-float" class="wa-float" aria-label="হোয়াটসঅ্যাপ">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+

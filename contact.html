@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="bn" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>যোগাযোগ | নির্মাণধারা — আর্কিটেকচার ও ইন্টেরিয়র ডিজাইন পরামর্শ বাংলাদেশ</title>
+  <meta name="description" content="নির্মাণধারার সাথে যোগাযোগ করুন। আর্কিটেকচার, ইন্টেরিয়র ডিজাইন ও নির্মাণ সেবার জন্য হোয়াটসঅ্যাপে বা ফর্মের মাধ্যমে আমাদের সাথে কথা বলুন।" />
+  <meta name="keywords" content="নির্মাণধারা যোগাযোগ, ইন্টেরিয়র ডিজাইন পরামর্শ ঢাকা, আর্কিটেকচার ফার্ম যোগাযোগ বাংলাদেশ" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nirmandhara.com/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nirmandhara.com/contact.html" />
+  <meta property="og:title" content="যোগাযোগ | নির্মাণধারা" />
+  <meta property="og:description" content="নির্মাণধারার সাথে হোয়াটসঅ্যাপে বা ফর্মের মাধ্যমে যোগাযোগ করুন।" />
+  <meta property="og:image" content="https://nirmandhara.com/images/og-contact.jpg" />
+  <link rel="icon" type="image/x-icon" href="logo.ico" />
+  <link rel="apple-touch-icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ── CONTACT PAGE ── */
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    /* Left: info cards */
+    .contact-info { display: flex; flex-direction: column; gap: 20px; }
+
+    .contact-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      transition: var(--transition);
+    }
+    .contact-card:hover { border-color: rgba(184,144,46,0.2); }
+    .contact-card-icon {
+      width: 48px; height: 48px;
+      border-radius: var(--radius);
+      background: var(--gold-bg);
+      border: 1px solid var(--gold-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-card-icon svg { width: 22px; height: 22px; stroke: var(--gold); }
+    .contact-card-body h4 {
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 6px;
+    }
+    .contact-card-body p { font-size: 0.95rem; color: var(--cream); font-weight: 500; }
+    .contact-card-body a { color: var(--cream); transition: var(--transition); }
+    .contact-card-body a:hover { color: var(--gold); }
+
+    /* WA direct card */
+    .wa-direct-card {
+      background: linear-gradient(135deg, #0d2010, #0a1a0d);
+      border: 1px solid rgba(37,211,102,0.25);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .wa-direct-card:hover {
+      border-color: rgba(37,211,102,0.5);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(37,211,102,0.1);
+    }
+    .wa-direct-icon {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      background: #25D366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+    }
+    .wa-direct-icon svg { width: 26px; height: 26px; fill: white; }
+    .wa-direct-body h4 { font-size: 1rem; font-weight: 700; color: var(--cream); margin-bottom: 4px; }
+    .wa-direct-body p { font-size: 0.82rem; color: rgba(37,211,102,0.8); }
+
+    /* Hours */
+    .hours-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+    }
+    .hours-card h4 {
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 16px;
+    }
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-2);
+      font-size: 0.87rem;
+    }
+    .hours-row:last-child { border-bottom: none; }
+    .hours-row .day { color: var(--muted); }
+    .hours-row .time { color: var(--gold); font-family: var(--font-ui); font-weight: 600; }
+    .hours-row .closed { color: var(--faint); }
+
+    /* Right: Form */
+    .contact-form-wrap {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-form-wrap::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .contact-form-wrap h2 { font-size: 1.6rem; margin-bottom: 8px; }
+    .contact-form-wrap > p { font-size: 0.9rem; color: var(--muted); margin-bottom: 32px; }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    /* WA Preview */
+    .wa-preview {
+      background: var(--cream-2);
+      border: 1px solid rgba(37,211,102,0.15);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      margin-bottom: 20px;
+      display: none;
+    }
+    .wa-preview.show { display: block; }
+    .wa-preview-label {
+      font-family: var(--font-ui);
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(37,211,102,0.7);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .wa-preview-text {
+      font-size: 0.82rem;
+      color: var(--muted);
+      white-space: pre-line;
+      line-height: 1.7;
+      font-family: var(--font-bangla);
+    }
+
+    /* Submit btn */
+    .wa-submit-btn {
+      width: 100%;
+      padding: 18px;
+      background: #25D366;
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      font-family: var(--font-bangla);
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      transition: var(--transition);
+      letter-spacing: 0.02em;
+    }
+    .wa-submit-btn:hover {
+      background: #1da851;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(37,211,102,0.35);
+    }
+    .wa-submit-btn svg { width: 22px; height: 22px; fill: white; flex-shrink: 0; }
+
+    .form-note {
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--faint);
+      margin-top: 14px;
+    }
+    .form-note span { color: var(--gold); }
+
+    /* Map placeholder */
+    .map-placeholder {
+      width: 100%;
+      height: 260px;
+      background: var(--cream-2);
+      border: 1px dashed var(--gold-border);
+      border-radius: var(--radius-lg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: var(--faint);
+      margin-top: 20px;
+    }
+    .map-placeholder svg { width: 36px; height: 36px; stroke: rgba(232,160,32,0.3); }
+    .map-placeholder span { font-family: var(--font-ui); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .faq-q {
+      width: 100%;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: none;
+      cursor: pointer;
+      text-align: left;
+      font-family: var(--font-bangla);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--cream);
+      transition: var(--transition);
+      gap: 16px;
+    }
+    .faq-q:hover { color: var(--gold); }
+    .faq-q svg {
+      width: 20px; height: 20px;
+      stroke: var(--gold);
+      flex-shrink: 0;
+      transition: var(--transition);
+    }
+    .faq-item.open .faq-q svg { transform: rotate(45deg); }
+    .faq-item.open { border-color: rgba(184,144,46,0.2); }
+    .faq-a {
+      padding: 0 24px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+    .faq-item.open .faq-a { max-height: 200px; padding: 0 24px 20px; }
+
+    @media (max-width: 1024px) {
+      .contact-layout { grid-template-columns: 1fr; gap: 40px; }
+    }
+    @media (max-width: 768px) {
+      .contact-form-wrap { padding: 28px 20px; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="light-nav">
+
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <button class="nav-toggle" aria-label="মেনু"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">হোম</a>
+        <a href="services.html">সেবাসমূহ</a>
+        <a href="about.html">আমাদের সম্পর্কে</a>
+        <a href="contact.html" class="active">যোগাযোগ</a>
+        <a href="terms.html">শর্তাবলী</a>
+      </div>
+      <a href="https://wa.me/8801620144641" target="_blank" rel="noopener" class="nav-wa">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        হোয়াটসঅ্যাপ
+      </a>
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="নির্মাণধারা" class="nav-logo-img" onerror="this.src='logo.jpg';" /></a>
+    </div>
+    <nav class="nav-mobile">
+      <a href="index.html">🏠 হোম</a>
+      <a href="services.html">✦ সেবাসমূহ</a>
+      <a href="about.html">ℹ️ আমাদের সম্পর্কে</a>
+      <a href="contact.html" class="active">📞 যোগাযোগ</a>
+      <a href="terms.html">📄 শর্তাবলী</a>
+      <a href="https://wa.me/8801620144641" target="_blank" class="nav-mobile-wa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        হোয়াটসঅ্যাপে বার্তা পাঠান
+      </a>
+    </nav>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-content container">
+    <div class="breadcrumb"><a href="index.html">হোম</a><span>/</span><span>যোগাযোগ</span></div>
+    <h1>আমাদের সাথে <em style="font-style:italic;color:var(--gold);">যোগাযোগ</em></h1>
+    <p>আপনার প্রজেক্ট নিয়ে আলোচনা করতে আজই আমাদের সাথে যোগাযোগ করুন। আমরা সর্বদা প্রস্তুত।</p>
+  </div>
+</div>
+
+<!-- MAIN CONTACT -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- LEFT: Info -->
+      <div class="contact-info">
+
+        <!-- WA Direct -->
+        <div class="wa-direct-card" onclick="openWhatsApp('আস্সালামু আলাইকুম! আমি নির্মাণধারার সাথে যোগাযোগ করতে চাই।')" role="button" tabindex="0" aria-label="হোয়াটসঅ্যাপে সরাসরি যোগাযোগ">
+          <div class="wa-direct-icon">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          </div>
+          <div class="wa-direct-body">
+            <h4>সরাসরি হোয়াটসঅ্যাপ করুন →</h4>
+            <p>+৮৮০ ১৬২০-১৪৪৬৪১ · এখনই চ্যাট করুন</p>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.41 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91A16 16 0 0 0 14 15.91l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="contact-card-body">
+            <h4>ফোন / হোয়াটসঅ্যাপ</h4>
+            <p><a href="tel:+8801620144641">+৮৮০ ১৬২০-১৪৪৬৪১</a></p>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-card-body">
+            <h4>কার্যক্ষেত্র</h4>
+            <p>সমগ্র বাংলাদেশ</p>
+          </div>
+        </div>
+
+        <!-- License -->
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="contact-card-body">
+            <h4>নিবন্ধন / লাইসেন্স</h4>
+            <p style="color:var(--gold);">সরকার অনুমোদিত · লাইসেন্স নং: XXXXX</p>
+          </div>
+        </div>
+
+        <!-- Hours -->
+        <div class="hours-card">
+          <h4>কার্যালয়ের সময়</h4>
+          <div class="hours-row">
+            <span class="day">শনিবার – বৃহস্পতিবার</span>
+            <span class="time">সকাল ৯টা – সন্ধ্যা ৬টা</span>
+          </div>
+          <div class="hours-row">
+            <span class="day">শুক্রবার</span>
+            <span class="closed">বন্ধ</span>
+          </div>
+          <div class="hours-row" style="margin-top:8px; border-top:1px solid rgba(37,211,102,0.1); padding-top:12px;">
+            <span class="day" style="color:rgba(37,211,102,0.8); font-size:0.82rem;">হোয়াটসঅ্যাপ</span>
+            <span class="time" style="color:rgba(37,211,102,0.9);">সার্বক্ষণিক</span>
+          </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <div class="map-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+          <span>ম্যাপ এম্বেড এখানে যোগ করুন</span>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div class="contact-form-wrap" data-animate>
+        <h2>বার্তা <em style="color:var(--gold);">পাঠান</em></h2>
+        <p>নিচের ফর্মটি পূরণ করুন। সাবমিট করলে সরাসরি হোয়াটসঅ্যাপে চলে যাবে।</p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-name">আপনার নাম <span>*</span></label>
+            <input type="text" id="f-name" class="form-control" placeholder="যেমন: রহিম সাহেব" required oninput="updatePreview()" />
+          </div>
+          <div class="form-group">
+            <label for="f-phone">ফোন নম্বর <span>*</span></label>
+            <input type="tel" id="f-phone" class="form-control" placeholder="+৮৮০ ১৭XX-XXXXXX" required oninput="updatePreview()" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="f-email">ইমেইল (ঐচ্ছিক)</label>
+          <input type="email" id="f-email" class="form-control" placeholder="your@email.com" oninput="updatePreview()" />
+        </div>
+
+        <div class="form-group">
+          <label for="f-service">কোন সেবায় আগ্রহী?</label>
+          <select id="f-service" class="form-control" oninput="updatePreview()">
+            <option value="">— বেছে নিন —</option>
+            <option value="আর্কিটেকচারাল ডিজাইন">আর্কিটেকচারাল ডিজাইন</option>
+            <option value="ইন্টেরিয়র ডিজাইন">ইন্টেরিয়র ডিজাইন</option>
+            <option value="নির্মাণ কাজ">নির্মাণ কাজ</option>
+            <option value="রিয়েল এস্টেট পরামর্শ">রিয়েল এস্টেট পরামর্শ</option>
+            <option value="আমদানি ও পাইকারি">আমদানি ও পাইকারি</option>
+            <option value="প্ল্যাটিনাম প্যাকেজ">প্ল্যাটিনাম প্যাকেজ ✦</option>
+            <option value="বিনামূল্যে পরামর্শ">বিনামূল্যে পরামর্শ</option>
+            <option value="অন্যান্য">অন্যান্য</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="f-msg">আপনার বার্তা <span>*</span></label>
+          <textarea id="f-msg" class="form-control" placeholder="আপনার প্রজেক্টের বিবরণ, বাজেট, অবস্থান ও যেকোনো প্রশ্ন লিখুন..." required oninput="updatePreview()"></textarea>
+        </div>
+
+        <!-- Live WA Preview -->
+        <div class="wa-preview" id="wa-preview">
+          <div class="wa-preview-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(37,211,102,0.7)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            হোয়াটসঅ্যাপে এভাবে যাবে:
+          </div>
+          <div class="wa-preview-text" id="wa-preview-text"></div>
+        </div>
+
+        <button class="wa-submit-btn" onclick="submitToWhatsApp()" type="button">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          হোয়াটসঅ্যাপে বার্তা পাঠান
+        </button>
+        <p class="form-note">বাটনে ক্লিক করলে হোয়াটসঅ্যাপ খুলবে ও বার্তা পাঠানো যাবে। <span>সম্পূর্ণ বিনামূল্যে।</span></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background:var(--dark-2);" aria-labelledby="faq-heading">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:48px;">
+      <span class="section-label">সাধারণ প্রশ্ন</span>
+      <h2 class="section-title" id="faq-heading">প্রায়ই জিজ্ঞাসিত <em>প্রশ্নোত্তর</em></h2>
+      <div class="gold-line" style="max-width:200px;margin-inline:auto;"><span></span></div>
+    </div>
+    <div class="faq-list" style="max-width:780px; margin-inline:auto;">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          প্রজেক্ট শুরু করতে কত সময় লাগে?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-a">প্রাথমিক পরামর্শের পরে সাধারণত ৩-৭ কার্যদিবসের মধ্যে ডিজাইন কনসেপ্ট প্রস্তুত হয়। নির্মাণ শুরুর সময় প্রজেক্টের আকার ও জটিলতার উপর নির্ভরশীল।</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          কি বাজেটের মধ্যে কাজ করা সম্ভব?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-a">হ্যাঁ, আমরা বিভিন্ন বাজেটে কাজ করি। আমাদের বেসিক থেকে প্ল্যাটিনাম পর্যন্ত বিভিন্ন প্যাকেজ রয়েছে। আপনার বাজেট জানালে আমরা সেরা সমাধান দিতে পারব।</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          ঢাকার বাইরে কি সেবা পাওয়া যায়?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-a">হ্যাঁ, আমরা সারা বাংলাদেশে সেবা দিই। সকল ৬৪ জেলায় আমাদের কার্যক্রম রয়েছে। দূরবর্তী এলাকায় ভ্রমণ খরচ প্রযোজ্য হতে পারে।</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          কাজের মান নিশ্চিত করা হয় কিভাবে?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-a">আমাদের প্রতিটি প্রজেক্টে নিবেদিত প্রজেক্ট ম্যানেজার থাকেন। কাজ শেষে বিস্তারিত মান পরীক্ষা করা হয়। লাক্সারি ও প্ল্যাটিনাম প্যাকেজে আজীবন গ্যারান্টি প্রদান করা হয়।</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          পেমেন্ট কিভাবে করতে হয়?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-a">আমরা কিস্তিতে পেমেন্টের সুবিধা দিই। সাধারণত ৩০% অগ্রিম, কাজের মধ্যে ৪০% এবং শেষে ৩০% পরিশোধ করতে হয়। বিস্তারিত চুক্তিতে উল্লেখ থাকে।</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          বিনামূল্যে পরামর্শ কি সত্যিই বিনামূল্যে?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-a">হ্যাঁ, প্রাথমিক পরামর্শ সম্পূর্ণ বিনামূল্যে। হোয়াটসঅ্যাপে বা ফোনে প্রথম আলোচনায় কোনো চার্জ নেই। পরবর্তী বিস্তারিত কনসালটেশন সেশনের জন্য মূল্য প্রযোজ্য।</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="logo.png" alt="নির্মাণধারা" class="footer-logo-img" onerror="this.src='logo.jpg';" />
+          <div>
+            <div class="footer-brand-name"><span>নির্মাণ</span>ধারা</div>
+            <div class="footer-tagline">Design Your Dream</div>
+          </div>
+        </div>
+        <p class="footer-desc">বাংলাদেশের শীর্ষস্থানীয় আর্কিটেকচার, ইন্টেরিয়র ডিজাইন ও নির্মাণ প্রতিষ্ঠান।</p>
+        <div class="footer-lic">সরকার অনুমোদিত | লাইসেন্স নং: <span>XXXXX</span></div>
+      </div>
+      <div class="footer-col">
+        <h4>দ্রুত লিংক</h4>
+        <ul>
+          <li><a href="index.html">হোম</a></li>
+          <li><a href="services.html">সেবাসমূহ</a></li>
+          <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+          <li><a href="contact.html">যোগাযোগ</a></li>
+          <li><a href="terms.html">শর্তাবলী</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>আমাদের সেবা</h4>
+        <ul>
+          <li><a href="services.html">আর্কিটেকচারাল ডিজাইন</a></li>
+          <li><a href="services.html">ইন্টেরিয়র ডিজাইন</a></li>
+          <li><a href="services.html">নির্মাণ কাজ</a></li>
+          <li><a href="services.html">রিয়েল এস্টেট</a></li>
+          <li><a href="services.html">প্ল্যাটিনাম প্যাকেজ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>যোগাযোগ</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.41 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91A16 16 0 0 0 14 15.91l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+৮৮০ ১৬২০-১৪৪৬৪১</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>বাংলাদেশ</span>
+        </div>
+        <br/>
+        <button class="btn btn-gold" style="width:100%; justify-content:center;" onclick="openWhatsApp()">হোয়াটসঅ্যাপ করুন</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© ২০২৪ <span>নির্মাণধারা</span>। সকল স্বত্ব সংরক্ষিত। | নিবন্ধন নং: <span>XXXXX</span></p>
+      <div class="footer-social">
+        <a href="#" aria-label="ফেসবুক"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" aria-label="ইনস্টাগ্রাম"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="https://wa.me/8801620144641" target="_blank" rel="noopener" aria-label="হোয়াটসঅ্যাপ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="#" id="wa-float" class="wa-float" aria-label="হোয়াটসঅ্যাপ">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.117 1.528 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.725-1.47A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.698-.5-5.25-1.38l-.375-.214-3.9 1.002 1.026-3.79-.234-.39A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+<script>
+  /* ── Contact Form Logic ── */
+  function buildMessage() {
+    const name    = document.getElementById('f-name').value.trim();
+    const phone   = document.getElementById('f-phone').value.trim();
+    const email   = document.getElementById('f-email').value.trim();
+    const service = document.getElementById('f-service').value;
+    const msg     = document.getElementById('f-msg').value.trim();
+
+    let text = '🏛️ *নির্মাণধারা — নতুন অনুসন্ধান*\n';
+    text += '━━━━━━━━━━━━━━━━━━━━\n\n';
+    if (name)    text += `👤 *নাম:* ${name}\n`;
+    if (phone)   text += `📞 *ফোন:* ${phone}\n`;
+    if (email)   text += `📧 *ইমেইল:* ${email}\n`;
+    if (service) text += `🔧 *সেবা:* ${service}\n`;
+    if (msg) {
+      text += '\n💬 *বার্তা:*\n';
+      text += msg + '\n';
+    }
+    text += '\n━━━━━━━━━━━━━━━━━━━━\n';
+    text += '🌐 nirmandhara.com';
+    return text;
+  }
+
+  function updatePreview() {
+    const name  = document.getElementById('f-name').value.trim();
+    const phone = document.getElementById('f-phone').value.trim();
+    const msg   = document.getElementById('f-msg').value.trim();
+    const preview = document.getElementById('wa-preview');
+    const previewText = document.getElementById('wa-preview-text');
+
+    if (name || phone || msg) {
+      preview.classList.add('show');
+      previewText.textContent = buildMessage();
+    } else {
+      preview.classList.remove('show');
+    }
+  }
+
+  function submitToWhatsApp() {
+    const name  = document.getElementById('f-name').value.trim();
+    const phone = document.getElementById('f-phone').value.trim();
+    const msg   = document.getElementById('f-msg').value.trim();
+
+    if (!name) { alert('অনুগ্রহ করে আপনার নাম লিখুন।'); document.getElementById('f-name').focus(); return; }
+    if (!phone) { alert('অনুগ্রহ করে আপনার ফোন নম্বর লিখুন।'); document.getElementById('f-phone').focus(); return; }
+    if (!msg)  { alert('অনুগ্রহ করে আপনার বার্তা লিখুন।'); document.getElementById('f-msg').focus(); return; }
+
+    const text = buildMessage();
+    window.open('https://wa.me/8801620144641?text=' + encodeURIComponent(text), '_blank');
+  }
+
+  /* ── FAQ toggle ── */
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+</body>
+</html>
+
